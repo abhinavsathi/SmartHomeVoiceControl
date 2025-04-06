@@ -45,9 +45,9 @@ This project demonstrates a prototype smart home system built with Python, Flask
 - Voice: Click the mic button, speak (e.g., "set AC to 16 degrees").
 - Logs: View device_logs.json or UI logs section.
 ## Files
-- ('app.py'): Flask server and API.
-- ('voice_assistant.py'): Voice processing and SocketIO.
-- ('train_intents.py'): Intent model training.
+- ('app.py') : Flask server and API.
+- ('voice_assistant.py') : Voice processing and SocketIO.
+- ('train_intents.py') : Intent model training.
 - ('intents.json'): Training data (17 intents, 255+ patterns).
 - ('templates/index.html'): Web UI.
 - ('device_logs.json, app.log, assistant.log'): Logs.
