@@ -24,3 +24,15 @@ This project demonstrates a prototype smart home system built with Python, Flask
    ```bash
    git clone https://github.com/abhinavsathi/SmartHomeVoiceControl.git
    cd SmartHomeVoiceControl
+2. Install Dependencies:
+   ```bash
+     pip install flask flask-socketio requests numpy scipy scikit-learn speechrecognition sounddevice matplotlib
+3. Train Model
+   ```bash
+      python train_intents.py
+5. Run Servers
+    ```bash
+    python app.py
+6. Voice Assistant
+    ```bash
+    python voice_assistant.py
