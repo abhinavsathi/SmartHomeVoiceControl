@@ -1,0 +1,225 @@
+2025-04-06 13:31:39,525 - voice_assistant - ERROR - Error loading model: invalid load key, '\x10'.
+2025-04-06 13:32:49,867 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-06 13:33:10,442 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-06 13:33:22,497 - voice_assistant - INFO - Predicted intent: turn_off_fan (confidence: 0.13)
+2025-04-06 13:33:22,497 - voice_assistant - WARNING - Low confidence prediction: turn_off_fan (0.13)
+2025-04-06 13:33:32,309 - voice_assistant - INFO - Predicted intent: turn_on_light (confidence: 0.66)
+2025-04-06 13:33:34,345 - voice_assistant - ERROR - API request error: HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001EF74C25A30>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-06 14:40:20,835 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-06 14:40:36,787 - voice_assistant - INFO - Predicted intent: turn_on_light (confidence: 0.12)
+2025-04-06 14:40:36,787 - voice_assistant - WARNING - Low confidence prediction: turn_on_light (0.12)
+2025-04-06 14:40:49,448 - voice_assistant - INFO - Predicted intent: unlock_door (confidence: 0.75)
+2025-04-06 14:40:58,889 - voice_assistant - INFO - Predicted intent: lock_door (confidence: 0.51)
+2025-04-06 14:41:09,887 - voice_assistant - INFO - Predicted intent: play_music (confidence: 0.58)
+2025-04-06 14:41:14,843 - voice_assistant - INFO - Predicted intent: stop_music (confidence: 0.30)
+2025-04-06 14:41:14,843 - voice_assistant - WARNING - Low confidence prediction: stop_music (0.30)
+2025-04-06 14:45:55,107 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-06 14:46:05,278 - voice_assistant - ERROR - Error recording audio: Error opening InputStream: Unanticipated host error [PaErrorCode -9999]: 'An invalid parameter was passed to a system function.' [MME error 11]
+2025-04-06 14:46:15,442 - voice_assistant - ERROR - Error recording audio: Error opening InputStream: Unanticipated host error [PaErrorCode -9999]: 'An invalid parameter was passed to a system function.' [MME error 11]
+2025-04-06 14:46:25,589 - voice_assistant - ERROR - Error recording audio: Error opening InputStream: Unanticipated host error [PaErrorCode -9999]: 'An invalid parameter was passed to a system function.' [MME error 11]
+2025-04-06 14:46:35,734 - voice_assistant - ERROR - Error recording audio: Error opening InputStream: Unanticipated host error [PaErrorCode -9999]: 'An invalid parameter was passed to a system function.' [MME error 11]
+2025-04-06 14:55:09,460 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-06 14:55:19,595 - voice_assistant - ERROR - Error recording audio: Error opening InputStream: Unanticipated host error [PaErrorCode -9999]: 'An invalid parameter was passed to a system function.' [MME error 11]
+2025-04-06 14:55:29,735 - voice_assistant - ERROR - Error recording audio: Error opening InputStream: Unanticipated host error [PaErrorCode -9999]: 'An invalid parameter was passed to a system function.' [MME error 11]
+2025-04-06 14:55:39,881 - voice_assistant - ERROR - Error recording audio: Error opening InputStream: Unanticipated host error [PaErrorCode -9999]: 'An invalid parameter was passed to a system function.' [MME error 11]
+2025-04-06 14:55:50,029 - voice_assistant - ERROR - Error recording audio: Error opening InputStream: Unanticipated host error [PaErrorCode -9999]: 'An invalid parameter was passed to a system function.' [MME error 11]
+2025-04-06 14:56:00,173 - voice_assistant - ERROR - Error recording audio: Error opening InputStream: Unanticipated host error [PaErrorCode -9999]: 'An invalid parameter was passed to a system function.' [MME error 11]
+2025-04-06 14:56:39,501 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-06 14:56:48,636 - voice_assistant - INFO - Predicted intent: turn_on_light (confidence: 0.12)
+2025-04-06 14:56:48,637 - voice_assistant - WARNING - Low confidence prediction: turn_on_light (0.12)
+2025-04-06 14:59:39,781 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-06 14:59:44,770 - voice_assistant - INFO - Predicted intent: turn_on_light (confidence: 0.12)
+2025-04-06 14:59:44,770 - voice_assistant - WARNING - Low confidence prediction: turn_on_light (0.12)
+2025-04-06 14:59:49,679 - voice_assistant - INFO - Predicted intent: turn_on_light (confidence: 0.12)
+2025-04-06 14:59:49,679 - voice_assistant - WARNING - Low confidence prediction: turn_on_light (0.12)
+2025-04-06 15:00:03,964 - voice_assistant - INFO - Predicted intent: turn_on_light (confidence: 0.83)
+2025-04-06 15:00:08,619 - voice_assistant - INFO - Predicted intent: activate_night_mode (confidence: 0.18)
+2025-04-06 15:00:08,619 - voice_assistant - WARNING - Low confidence prediction: activate_night_mode (0.18)
+2025-04-06 15:00:13,641 - voice_assistant - INFO - Predicted intent: activate_night_mode (confidence: 0.18)
+2025-04-06 15:00:13,641 - voice_assistant - WARNING - Low confidence prediction: activate_night_mode (0.18)
+2025-04-06 15:00:18,555 - voice_assistant - INFO - Predicted intent: activate_movie_mode (confidence: 0.71)
+2025-04-06 15:00:28,079 - voice_assistant - INFO - Predicted intent: turn_off_light (confidence: 0.51)
+2025-04-06 15:00:37,704 - voice_assistant - INFO - Predicted intent: set_ac_temperature (confidence: 0.95)
+2025-04-06 15:01:03,202 - voice_assistant - INFO - Predicted intent: exit (confidence: 0.25)
+2025-04-06 15:01:03,202 - voice_assistant - WARNING - Low confidence prediction: exit (0.25)
+2025-04-06 15:01:08,015 - voice_assistant - INFO - Predicted intent: turn_on_light (confidence: 0.12)
+2025-04-06 15:01:08,015 - voice_assistant - WARNING - Low confidence prediction: turn_on_light (0.12)
+2025-04-06 15:01:13,149 - voice_assistant - INFO - Predicted intent: turn_on_light (confidence: 0.12)
+2025-04-06 15:01:13,149 - voice_assistant - WARNING - Low confidence prediction: turn_on_light (0.12)
+2025-04-06 15:01:17,934 - voice_assistant - INFO - Predicted intent: stop_music (confidence: 0.29)
+2025-04-06 15:01:17,934 - voice_assistant - WARNING - Low confidence prediction: stop_music (0.29)
+2025-04-06 15:01:51,844 - voice_assistant - INFO - Predicted intent: exit (confidence: 0.25)
+2025-04-06 15:01:51,845 - voice_assistant - WARNING - Low confidence prediction: exit (0.25)
+2025-04-06 15:02:27,976 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-06 15:02:32,401 - voice_assistant - INFO - Predicted intent: stop_music (confidence: 0.29)
+2025-04-06 15:02:32,401 - voice_assistant - WARNING - Low confidence prediction: stop_music (0.29)
+2025-04-06 15:02:45,946 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-06 15:03:09,667 - voice_assistant - INFO - Predicted intent: turn_on_light (confidence: 0.12)
+2025-04-06 15:03:09,667 - voice_assistant - WARNING - Low confidence prediction: turn_on_light (0.12)
+2025-04-06 16:38:20,395 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-06 16:38:44,588 - voice_assistant - INFO - Predicted intent: turn_on_light (confidence: 0.47)
+2025-04-06 16:38:59,114 - voice_assistant - INFO - Predicted intent: stop_music (confidence: 0.30)
+2025-04-06 16:38:59,114 - voice_assistant - WARNING - Low confidence prediction: stop_music (0.30)
+2025-04-06 16:43:23,665 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-06 16:58:49,684 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-06 16:58:49,700 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.7:5001
+2025-04-06 16:58:49,701 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-06 17:10:49,049 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-06 17:11:20,514 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-06 17:11:21,790 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.7:5001
+2025-04-06 17:11:21,790 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-06 17:11:48,752 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:11:48] "[33mGET / HTTP/1.1[0m" 404 -
+2025-04-06 17:11:48,871 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:11:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-06 17:29:06,593 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-06 17:29:06,604 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.7:5001
+2025-04-06 17:29:06,604 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-06 17:29:58,937 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:29:58] "GET /socket.io/?EIO=4&transport=polling&t=POA-CdI HTTP/1.1" 200 -
+2025-04-06 17:29:58,987 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:29:58] "POST /socket.io/?EIO=4&transport=polling&t=POA-Ce5&sid=2tDk8ncHkhwzz_RGAAAA HTTP/1.1" 200 -
+2025-04-06 17:29:58,990 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:29:58] "GET /socket.io/?EIO=4&transport=polling&t=POA-Ce6&sid=2tDk8ncHkhwzz_RGAAAA HTTP/1.1" 200 -
+2025-04-06 17:29:59,033 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:29:59] "GET /socket.io/?EIO=4&transport=polling&t=POA-Ceu&sid=2tDk8ncHkhwzz_RGAAAA HTTP/1.1" 200 -
+2025-04-06 17:29:59,088 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:29:59] "GET /socket.io/?EIO=4&transport=polling&t=POA-Cfk&sid=2tDk8ncHkhwzz_RGAAAA HTTP/1.1" 200 -
+2025-04-06 17:30:07,152 - voice_assistant - INFO - Predicted intent: turn_on_light (confidence: 0.12)
+2025-04-06 17:30:07,152 - voice_assistant - WARNING - Low confidence prediction: turn_on_light (0.12)
+2025-04-06 17:30:15,402 - voice_assistant - INFO - Predicted intent: turn_on_light (confidence: 0.12)
+2025-04-06 17:30:15,402 - voice_assistant - WARNING - Low confidence prediction: turn_on_light (0.12)
+2025-04-06 17:30:22,168 - voice_assistant - INFO - Predicted intent: lock_door (confidence: 0.89)
+2025-04-06 17:30:35,314 - voice_assistant - INFO - Predicted intent: exit (confidence: 0.25)
+2025-04-06 17:30:35,314 - voice_assistant - WARNING - Low confidence prediction: exit (0.25)
+2025-04-06 17:30:42,489 - voice_assistant - INFO - Predicted intent: turn_off_light (confidence: 0.54)
+2025-04-06 17:30:52,386 - voice_assistant - INFO - Predicted intent: turn_on_light (confidence: 0.84)
+2025-04-06 17:31:11,647 - voice_assistant - INFO - Predicted intent: turn_on_light (confidence: 0.47)
+2025-04-06 17:31:23,411 - voice_assistant - INFO - Predicted intent: stop_music (confidence: 0.29)
+2025-04-06 17:31:23,411 - voice_assistant - WARNING - Low confidence prediction: stop_music (0.29)
+2025-04-06 17:31:30,263 - voice_assistant - INFO - Predicted intent: play_music (confidence: 0.59)
+2025-04-06 17:33:57,133 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-06 17:33:57,145 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.7:5001
+2025-04-06 17:33:57,146 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-06 17:33:57,185 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:33:57] "GET /socket.io/?EIO=4&transport=polling&t=POA_6M3 HTTP/1.1" 200 -
+2025-04-06 17:33:57,190 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:33:57] "POST /socket.io/?EIO=4&transport=polling&t=POA_6o3&sid=67N9Oducn9NOfkHpAAAA HTTP/1.1" 200 -
+2025-04-06 17:33:57,194 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:33:57] "GET /socket.io/?EIO=4&transport=polling&t=POA_6o5&sid=67N9Oducn9NOfkHpAAAA HTTP/1.1" 200 -
+2025-04-06 17:34:18,750 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:34:18] "GET /socket.io/?EIO=4&transport=polling&t=POA_2c3 HTTP/1.1" 200 -
+2025-04-06 17:35:43,601 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:35:43] "GET /socket.io/?EIO=4&transport=websocket&sid=67N9Oducn9NOfkHpAAAA HTTP/1.1" 200 -
+2025-04-06 17:35:43,842 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:35:43] "GET /socket.io/?EIO=4&transport=polling&t=POA_WqW HTTP/1.1" 200 -
+2025-04-06 17:35:43,848 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:35:43] "POST /socket.io/?EIO=4&transport=polling&t=POA_Wqc&sid=RbhQf6VHpYHxz_MuAAAD HTTP/1.1" 200 -
+2025-04-06 17:35:43,853 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:35:43] "GET /socket.io/?EIO=4&transport=polling&t=POA_Wqd&sid=RbhQf6VHpYHxz_MuAAAD HTTP/1.1" 200 -
+2025-04-06 17:35:52,300 - voice_assistant - INFO - Predicted intent: turn_off_light (confidence: 0.52)
+2025-04-06 17:36:05,780 - voice_assistant - INFO - Predicted intent: set_ac_temperature (confidence: 0.93)
+2025-04-06 17:36:19,525 - voice_assistant - INFO - Predicted intent: turn_on_light (confidence: 0.12)
+2025-04-06 17:36:19,525 - voice_assistant - WARNING - Low confidence prediction: turn_on_light (0.12)
+2025-04-06 17:36:27,887 - voice_assistant - INFO - Predicted intent: turn_on_fan (confidence: 0.71)
+2025-04-06 17:36:37,501 - voice_assistant - INFO - Predicted intent: turn_off_fan (confidence: 0.83)
+2025-04-06 17:36:49,257 - voice_assistant - INFO - Predicted intent: turn_on_fan (confidence: 0.71)
+2025-04-06 17:37:17,226 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:37:17] "GET /socket.io/?EIO=4&transport=websocket&sid=RbhQf6VHpYHxz_MuAAAD HTTP/1.1" 200 -
+2025-04-06 17:37:17,366 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:37:17] "GET /socket.io/?EIO=4&transport=polling&t=POA_tfq HTTP/1.1" 200 -
+2025-04-06 17:37:17,370 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:37:17] "POST /socket.io/?EIO=4&transport=polling&t=POA_tfu&sid=j00f8QbgOnaunzzNAAAF HTTP/1.1" 200 -
+2025-04-06 17:37:17,372 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:37:17] "GET /socket.io/?EIO=4&transport=polling&t=POA_tfv&sid=j00f8QbgOnaunzzNAAAF HTTP/1.1" 200 -
+2025-04-06 17:37:24,203 - voice_assistant - INFO - Predicted intent: lock_door (confidence: 0.91)
+2025-04-06 17:37:33,359 - voice_assistant - INFO - Predicted intent: unlock_door (confidence: 0.25)
+2025-04-06 17:37:33,360 - voice_assistant - WARNING - Low confidence prediction: unlock_door (0.25)
+2025-04-06 17:37:40,414 - voice_assistant - INFO - Predicted intent: unlock_door (confidence: 0.36)
+2025-04-06 17:37:40,414 - voice_assistant - WARNING - Low confidence prediction: unlock_door (0.36)
+2025-04-06 17:37:48,415 - voice_assistant - INFO - Predicted intent: unlock_door (confidence: 0.84)
+2025-04-06 17:37:57,050 - voice_assistant - INFO - Predicted intent: turn_on_light (confidence: 0.12)
+2025-04-06 17:37:57,050 - voice_assistant - WARNING - Low confidence prediction: turn_on_light (0.12)
+2025-04-06 17:38:03,099 - voice_assistant - INFO - Predicted intent: stop_music (confidence: 0.30)
+2025-04-06 17:38:03,099 - voice_assistant - WARNING - Low confidence prediction: stop_music (0.30)
+2025-04-06 17:38:10,402 - voice_assistant - INFO - Predicted intent: turn_off_light (confidence: 0.52)
+2025-04-06 17:38:59,041 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-06 17:38:59,072 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.7:5001
+2025-04-06 17:38:59,072 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-06 17:38:59,175 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:38:59] "GET /socket.io/?EIO=4&transport=polling&t=POB0GGa HTTP/1.1" 200 -
+2025-04-06 17:38:59,180 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:38:59] "POST /socket.io/?EIO=4&transport=polling&t=POB0GWf&sid=2HOkB1lV6-J5TPJTAAAA HTTP/1.1" 200 -
+2025-04-06 17:38:59,181 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:38:59] "GET /socket.io/?EIO=4&transport=polling&t=POB0GWg&sid=2HOkB1lV6-J5TPJTAAAA HTTP/1.1" 200 -
+2025-04-06 17:39:00,291 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:39:00] "GET /socket.io/?EIO=4&transport=websocket&sid=2HOkB1lV6-J5TPJTAAAA HTTP/1.1" 200 -
+2025-04-06 17:39:00,438 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:39:00] "GET /socket.io/?EIO=4&transport=polling&t=POB0GqL HTTP/1.1" 200 -
+2025-04-06 17:39:00,447 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:39:00] "POST /socket.io/?EIO=4&transport=polling&t=POB0GqR&sid=GstBoeIm_M-lXDKDAAAC HTTP/1.1" 200 -
+2025-04-06 17:39:00,449 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:39:00] "GET /socket.io/?EIO=4&transport=polling&t=POB0GqS&sid=GstBoeIm_M-lXDKDAAAC HTTP/1.1" 200 -
+2025-04-06 17:56:05,499 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-06 17:56:05,511 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.7:5001
+2025-04-06 17:56:05,511 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-06 17:56:09,745 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:56:09] "GET /socket.io/?EIO=4&transport=polling&t=POB4C7C HTTP/1.1" 200 -
+2025-04-06 17:56:09,802 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:56:09] "POST /socket.io/?EIO=4&transport=polling&t=POB4C84&sid=6QFXEmLVt9ruhfeSAAAA HTTP/1.1" 200 -
+2025-04-06 17:56:09,805 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:56:09] "GET /socket.io/?EIO=4&transport=polling&t=POB4C85&sid=6QFXEmLVt9ruhfeSAAAA HTTP/1.1" 200 -
+2025-04-06 17:56:17,320 - voice_assistant - INFO - Predicted intent: turn_on_light (confidence: 0.12)
+2025-04-06 17:56:17,320 - voice_assistant - WARNING - Low confidence prediction: turn_on_light (0.12)
+2025-04-06 17:58:18,727 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-06 17:58:18,739 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.7:5001
+2025-04-06 17:58:18,740 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-06 17:58:19,214 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:58:19] "GET /socket.io/?EIO=4&transport=polling&t=POB4hk8 HTTP/1.1" 200 -
+2025-04-06 17:58:19,267 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:58:19] "POST /socket.io/?EIO=4&transport=polling&t=POB4hkz&sid=mVfTkqoXxWCVM2RIAAAA HTTP/1.1" 200 -
+2025-04-06 17:58:19,269 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:58:19] "GET /socket.io/?EIO=4&transport=polling&t=POB4hk_&sid=mVfTkqoXxWCVM2RIAAAA HTTP/1.1" 200 -
+2025-04-06 17:58:19,309 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:58:19] "GET /socket.io/?EIO=4&transport=polling&t=POB4hlc&sid=mVfTkqoXxWCVM2RIAAAA HTTP/1.1" 200 -
+2025-04-06 17:58:19,349 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:58:19] "GET /socket.io/?EIO=4&transport=polling&t=POB4hmK&sid=mVfTkqoXxWCVM2RIAAAA HTTP/1.1" 200 -
+2025-04-06 17:58:21,809 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:58:21] "GET /socket.io/?EIO=4&transport=websocket&sid=mVfTkqoXxWCVM2RIAAAA HTTP/1.1" 200 -
+2025-04-06 17:58:22,029 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:58:22] "GET /socket.io/?EIO=4&transport=polling&t=POB4iQC HTTP/1.1" 200 -
+2025-04-06 17:58:22,035 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:58:22] "POST /socket.io/?EIO=4&transport=polling&t=POB4iQG&sid=qRycuF2t1LSnMTd5AAAC HTTP/1.1" 200 -
+2025-04-06 17:58:22,038 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 17:58:22] "GET /socket.io/?EIO=4&transport=polling&t=POB4iQG.0&sid=qRycuF2t1LSnMTd5AAAC HTTP/1.1" 200 -
+2025-04-06 17:58:32,184 - voice_assistant - INFO - Predicted intent: greeting (confidence: 0.83)
+2025-04-06 17:58:40,421 - voice_assistant - INFO - Predicted intent: help (confidence: 0.90)
+2025-04-06 17:58:49,689 - voice_assistant - INFO - Predicted intent: play_music (confidence: 0.97)
+2025-04-06 17:58:59,546 - voice_assistant - INFO - Predicted intent: stop_music (confidence: 0.70)
+2025-04-06 17:59:10,410 - voice_assistant - INFO - Predicted intent: turn_on_fan (confidence: 0.46)
+2025-04-06 17:59:22,905 - voice_assistant - INFO - Predicted intent: set_ac_temperature (confidence: 0.94)
+2025-04-06 17:59:31,545 - voice_assistant - INFO - Predicted intent: set_ac_temperature (confidence: 0.98)
+2025-04-06 17:59:40,659 - voice_assistant - INFO - Predicted intent: turn_off_fan (confidence: 0.56)
+2025-04-06 18:00:09,423 - voice_assistant - INFO - Predicted intent: farewell (confidence: 0.58)
+2025-04-06 18:00:37,512 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 18:00:37] "GET /socket.io/?EIO=4&transport=websocket&sid=qRycuF2t1LSnMTd5AAAC HTTP/1.1" 200 -
+2025-04-06 18:37:13,687 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-06 18:37:13,698 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.7:5001
+2025-04-06 18:37:13,698 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-06 18:37:32,518 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 18:37:32] "GET /socket.io/?EIO=4&transport=polling&t=POBDgGV HTTP/1.1" 200 -
+2025-04-06 18:37:32,538 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 18:37:32] "POST /socket.io/?EIO=4&transport=polling&t=POBDgGs&sid=qfMYbE-2TWHs9h28AAAA HTTP/1.1" 200 -
+2025-04-06 18:37:32,544 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 18:37:32] "GET /socket.io/?EIO=4&transport=polling&t=POBDgGu&sid=qfMYbE-2TWHs9h28AAAA HTTP/1.1" 200 -
+2025-04-06 18:37:32,589 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 18:37:32] "GET /socket.io/?EIO=4&transport=polling&t=POBDgHg&sid=qfMYbE-2TWHs9h28AAAA HTTP/1.1" 200 -
+2025-04-06 18:37:32,631 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 18:37:32] "GET /socket.io/?EIO=4&transport=polling&t=POBDgIK&sid=qfMYbE-2TWHs9h28AAAA HTTP/1.1" 200 -
+2025-04-06 18:37:35,310 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 18:37:35] "GET /socket.io/?EIO=4&transport=websocket&sid=qfMYbE-2TWHs9h28AAAA HTTP/1.1" 200 -
+2025-04-06 18:37:53,999 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 18:37:53] "GET /socket.io/?EIO=4&transport=polling&t=POBDlW9 HTTP/1.1" 200 -
+2025-04-06 18:37:54,014 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 18:37:54] "POST /socket.io/?EIO=4&transport=polling&t=POBDlWR&sid=-jx2uZyhlkj48pXdAAAC HTTP/1.1" 200 -
+2025-04-06 18:37:54,018 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 18:37:54] "GET /socket.io/?EIO=4&transport=polling&t=POBDlWS&sid=-jx2uZyhlkj48pXdAAAC HTTP/1.1" 200 -
+2025-04-06 18:37:54,067 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 18:37:54] "GET /socket.io/?EIO=4&transport=polling&t=POBDlXH&sid=-jx2uZyhlkj48pXdAAAC HTTP/1.1" 200 -
+2025-04-06 18:37:54,116 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 18:37:54] "GET /socket.io/?EIO=4&transport=polling&t=POBDlY1&sid=-jx2uZyhlkj48pXdAAAC HTTP/1.1" 200 -
+2025-04-06 18:38:35,567 - voice_assistant - INFO - Predicted intent: greeting (confidence: 0.82)
+2025-04-06 18:38:58,155 - voice_assistant - INFO - Predicted intent: help (confidence: 0.89)
+2025-04-06 21:26:10,383 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-06 21:26:10,417 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.7:5001
+2025-04-06 21:26:10,417 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-06 21:28:09,592 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 21:28:09] "GET /socket.io/?EIO=4&transport=polling&t=POBqjYl HTTP/1.1" 200 -
+2025-04-06 21:28:09,614 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 21:28:09] "POST /socket.io/?EIO=4&transport=polling&t=POBqjZ8&sid=oR4briqOXqePY2VNAAAA HTTP/1.1" 200 -
+2025-04-06 21:28:09,619 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 21:28:09] "GET /socket.io/?EIO=4&transport=polling&t=POBqjZA&sid=oR4briqOXqePY2VNAAAA HTTP/1.1" 200 -
+2025-04-06 21:28:09,659 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 21:28:09] "GET /socket.io/?EIO=4&transport=polling&t=POBqjZw&sid=oR4briqOXqePY2VNAAAA HTTP/1.1" 200 -
+2025-04-06 21:28:09,719 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 21:28:09] "GET /socket.io/?EIO=4&transport=polling&t=POBqjaq&sid=oR4briqOXqePY2VNAAAA HTTP/1.1" 200 -
+2025-04-06 21:28:20,970 - voice_assistant - INFO - Predicted intent: greeting (confidence: 0.82)
+2025-04-06 21:28:43,484 - voice_assistant - INFO - Predicted intent: set_ac_temperature (confidence: 0.07)
+2025-04-06 21:28:43,484 - voice_assistant - WARNING - Low confidence prediction: set_ac_temperature (0.07)
+2025-04-06 21:29:21,423 - voice_assistant - INFO - Predicted intent: turn_off_fan (confidence: 0.64)
+2025-04-06 21:29:55,078 - voice_assistant - INFO - Predicted intent: turn_off_fan (confidence: 0.64)
+2025-04-06 21:30:17,301 - voice_assistant - INFO - Predicted intent: farewell (confidence: 0.58)
+2025-04-06 21:30:31,223 - voice_assistant - INFO - Predicted intent: set_ac_temperature (confidence: 0.07)
+2025-04-06 21:30:31,223 - voice_assistant - WARNING - Low confidence prediction: set_ac_temperature (0.07)
