@@ -30,9 +30,12 @@ This project demonstrates a prototype smart home system built with Python, Flask
 3. Train Model
    ```bash
    python train_intents.py
-5. Run Servers
-    ```bash
+4. Run Servers
+  *Backend*:
+   ```bash
     python app.py
-6. Voice Assistant
-    ```bash
-    python voice_assistant.py
+  *Voice Assistant*:
+   ```bash
+   python voice_assistant.py
+5. Access UI
+   Open http://127.0.0.1:5000 in a browser. 
