@@ -31,11 +31,11 @@ This project demonstrates a prototype smart home system built with Python, Flask
    ```bash
    python train_intents.py
 4. Run Servers
-  *Backend*:
    ```bash
+   *Backend*:
     python app.py
-  *Voice Assistant*:
-   ```bash
+   
+   *Voice Assistant*:
    python voice_assistant.py
 5. Access UI
    Open http://127.0.0.1:5000 in a browser. 
