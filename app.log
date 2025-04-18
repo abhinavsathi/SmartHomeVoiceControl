@@ -859,3 +859,296 @@
 2025-04-06 21:33:09,648 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 21:33:09] "GET /logs HTTP/1.1" 200 -
 2025-04-06 21:33:15,489 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 21:33:15] "GET /health HTTP/1.1" 200 -
 2025-04-06 21:33:15,493 - werkzeug - INFO - 127.0.0.1 - - [06/Apr/2025 21:33:15] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:51:33,926 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.35.50.255:5000
+2025-04-18 14:51:33,926 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 14:52:07,067 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.35.50.255:5000
+2025-04-18 14:52:07,067 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 14:52:23,647 - spotipy.oauth2 - INFO - User authentication requires interaction with your web browser. Once you enter your credentials and give authorization, you will be redirected to a url.  Paste that url you were directed to to complete the authorization.
+2025-04-18 14:52:23,746 - spotipy.oauth2 - INFO - Opened https://accounts.spotify.com/authorize?client_id=b6e627d8f4224a968b66b3e6c8c65da9&response_type=code&redirect_uri=http%3A%2F%2F127.0.0.1%3A5000%2Fcallback&scope=user-read-playback-state+user-modify-playback-state in your browser
+2025-04-18 14:52:25,130 - app - INFO - Spotify authenticated successfully
+2025-04-18 14:52:25,130 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:52:25] "GET /callback?code=AQBac773xHFffWDEvNlnW9oHgu43-44lnEbJXrmwuo5Ej-oTnN-Bo5kSdE-WCOdHp4kXPIjKqfZ4P3cwoswOOfaDqjTLwuZwyUVP21uGFETit_VmeAzvJYODh7g4QdF73_BU-mpLOmF950aysRWO8V2IAba0DzVORqblSPowcGvBSc4rm5TZf88XeEfZ_mAFl0Lq5GcPXzNbrOllK20xjaO6fkZCDsPPjuOFdvYPAF64IaRy4UTw6Q HTTP/1.1" 200 -
+2025-04-18 14:52:25,165 - app - ERROR - Spotify callback error: Server listening on localhost has not been accessed
+2025-04-18 14:52:25,165 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:52:25] "[35m[1mGET /callback HTTP/1.1[0m" 500 -
+2025-04-18 14:52:25,184 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:52:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-18 14:52:53,410 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:52:53] "GET / HTTP/1.1" 200 -
+2025-04-18 14:52:55,898 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:52:55] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:52:55,900 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:52:55] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:53:00,898 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:00] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:53:00,903 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:00] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:53:05,977 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:05] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:53:05,982 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:05] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:53:10,964 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:10] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:53:10,968 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:10] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:53:15,901 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:15] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:53:15,906 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:15] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:53:20,902 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:20] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:53:20,906 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:20] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:53:21,863 - spotipy.client - ERROR - HTTP Error for PUT to https://api.spotify.com/v1/me/player/play with Params: {} returned 404 due to Player command failed: No active device found
+2025-04-18 14:53:21,863 - app - ERROR - Spotify error: http status: 404, code: -1 - https://api.spotify.com/v1/me/player/play:
+ Player command failed: No active device found, reason: NO_ACTIVE_DEVICE
+2025-04-18 14:53:21,864 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:21] "[35m[1mPOST /command HTTP/1.1[0m" 500 -
+2025-04-18 14:53:25,901 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:25] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:53:25,905 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:25] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:53:28,574 - spotipy.client - ERROR - HTTP Error for PUT to https://api.spotify.com/v1/me/player/play with Params: {} returned 404 due to Player command failed: No active device found
+2025-04-18 14:53:28,574 - app - ERROR - Spotify error: http status: 404, code: -1 - https://api.spotify.com/v1/me/player/play:
+ Player command failed: No active device found, reason: NO_ACTIVE_DEVICE
+2025-04-18 14:53:28,575 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:28] "[35m[1mPOST /command HTTP/1.1[0m" 500 -
+2025-04-18 14:53:30,904 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:30] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:53:30,908 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:30] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:53:35,906 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:35] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:53:35,910 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:35] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:53:40,902 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:40] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:53:40,905 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:40] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:53:45,769 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:45] "POST /command HTTP/1.1" 200 -
+2025-04-18 14:53:45,773 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:45] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:53:45,798 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:45] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:53:45,901 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:45] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:53:45,905 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:45] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:53:50,901 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:50] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:53:50,905 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:50] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:53:55,912 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:55] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:53:55,916 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:55] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:53:56,007 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:56] "POST /command HTTP/1.1" 200 -
+2025-04-18 14:53:56,011 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:56] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:53:56,016 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:56] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:53:59,051 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:59] "POST /command HTTP/1.1" 200 -
+2025-04-18 14:53:59,055 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:59] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:53:59,059 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:53:59] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:54:00,902 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:00] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:54:00,906 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:00] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:54:02,720 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:02] "POST /command HTTP/1.1" 200 -
+2025-04-18 14:54:02,723 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:02] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:54:02,728 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:02] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:54:05,907 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:05] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:54:05,912 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:05] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:54:06,697 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:06] "POST /command HTTP/1.1" 200 -
+2025-04-18 14:54:06,700 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:06] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:54:06,704 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:06] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:54:08,940 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:08] "POST /command HTTP/1.1" 200 -
+2025-04-18 14:54:08,944 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:08] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:54:08,948 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:08] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:54:10,533 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:10] "POST /command HTTP/1.1" 200 -
+2025-04-18 14:54:10,536 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:10] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:54:10,541 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:10] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:54:10,900 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:10] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:54:10,904 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:10] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:54:11,894 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:11] "POST /command HTTP/1.1" 200 -
+2025-04-18 14:54:11,897 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:11] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:54:11,901 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:11] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:54:13,815 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:13] "POST /command HTTP/1.1" 200 -
+2025-04-18 14:54:13,819 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:13] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:54:13,823 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:13] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:54:14,249 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:14] "POST /command HTTP/1.1" 200 -
+2025-04-18 14:54:14,254 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:14] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:54:14,257 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:14] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:54:15,836 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:15] "POST /command HTTP/1.1" 200 -
+2025-04-18 14:54:15,840 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:15] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:54:15,843 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:15] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:54:15,901 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:15] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:54:15,905 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:15] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:54:16,511 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:16] "POST /command HTTP/1.1" 200 -
+2025-04-18 14:54:16,515 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:16] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:54:16,519 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:16] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:54:20,902 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:20] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:54:20,905 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:20] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:54:21,182 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:21] "POST /command HTTP/1.1" 200 -
+2025-04-18 14:54:21,186 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:21] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:54:21,190 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:21] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:54:25,899 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:25] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:54:25,904 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:25] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:54:26,394 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:26] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:54:28,347 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:28] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:54:28,866 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:28] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:54:29,027 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:29] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:54:30,908 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:30] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:54:30,913 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:30] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:54:35,909 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:35] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:54:35,913 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:35] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:54:40,900 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:40] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:54:40,904 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:40] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:54:45,975 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:45] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:54:45,980 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:45] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:54:50,970 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:50] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:54:50,974 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:50] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:54:55,976 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:55] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:54:55,979 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:54:55] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:55:00,962 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:55:00] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:55:00,966 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:55:00] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:55:05,969 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:55:05] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:55:05,974 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:55:05] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:55:10,972 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:55:10] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:55:10,976 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:55:10] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:55:15,961 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:55:15] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:55:15,966 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:55:15] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:55:20,961 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:55:20] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:55:20,966 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:55:20] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:55:25,962 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:55:25] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:55:25,967 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:55:25] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:55:30,971 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:55:30] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:55:30,975 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:55:30] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:55:35,965 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:55:35] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:55:35,971 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:55:35] "GET /logs HTTP/1.1" 200 -
+2025-04-18 14:55:40,972 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:55:40] "GET /health HTTP/1.1" 200 -
+2025-04-18 14:55:40,977 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 14:55:40] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:11:09,821 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.35.50.255:5000
+2025-04-18 15:11:09,821 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 15:11:31,035 - spotipy.oauth2 - INFO - User authentication requires interaction with your web browser. Once you enter your credentials and give authorization, you will be redirected to a url.  Paste that url you were directed to to complete the authorization.
+2025-04-18 15:11:31,153 - spotipy.oauth2 - INFO - Opened https://accounts.spotify.com/authorize?client_id=b6e627d8f4224a968b66b3e6c8c65da9&response_type=code&redirect_uri=http%3A%2F%2F127.0.0.1%3A5000%2Fcallback&scope=user-read-playback-state+user-modify-playback-state in your browser
+2025-04-18 15:11:31,867 - app - INFO - Spotify authenticated successfully
+2025-04-18 15:11:31,867 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:11:31] "GET /callback?code=AQAjRGS_bTiSlLemRxZtMBdaaHl155vDTO_RVkDstPtjEtt0IoSuJHk6C0HhHGNYrPCMegs_pFj_k80QeoKtcLtEV1B00AKDQBsN3v17z_e3oj_kFu1SArh6J8X3bgx42EKY1xJTWscVYegwU_kXQxzSH2XGHjeSZtxUsqkuVlh2jXhfri-o9wYTVZ02zmbnjKfA_4tTiwJXAEX8rJtcs2vqA59v1igEOKAqVbWWH1CwhtjusYiIeg HTTP/1.1" 200 -
+2025-04-18 15:11:46,587 - app - ERROR - Spotify callback error: Server listening on localhost has not been accessed
+2025-04-18 15:11:46,588 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:11:46] "[35m[1mGET /callback HTTP/1.1[0m" 500 -
+2025-04-18 15:11:49,092 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:11:49] "GET / HTTP/1.1" 200 -
+2025-04-18 15:11:49,498 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:11:49] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:11:49,500 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:11:49] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:11:49,504 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:11:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-18 15:11:54,505 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:11:54] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:11:54,510 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:11:54] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:11:59,971 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:11:59] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:11:59,976 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:11:59] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:12:04,968 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:04] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:12:04,973 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:04] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:12:09,971 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:09] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:12:09,975 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:09] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:12:14,969 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:14] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:12:14,973 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:14] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:12:19,513 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:19] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:12:19,519 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:19] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:12:24,259 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:24] "POST /command HTTP/1.1" 200 -
+2025-04-18 15:12:24,263 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:24] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:12:24,284 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:24] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:12:24,500 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:24] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:12:24,504 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:24] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:12:29,499 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:29] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:12:29,503 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:29] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:12:30,982 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:30] "POST /command HTTP/1.1" 200 -
+2025-04-18 15:12:30,987 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:30] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:12:30,991 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:30] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:12:34,507 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:34] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:12:34,511 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:34] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:12:35,023 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:35] "POST /command HTTP/1.1" 200 -
+2025-04-18 15:12:35,027 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:35] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:12:35,032 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:35] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:12:39,499 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:39] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:12:39,503 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:39] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:12:44,500 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:44] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:12:44,503 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:44] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:12:45,720 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:45] "POST /command HTTP/1.1" 200 -
+2025-04-18 15:12:45,726 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:45] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:12:45,732 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:45] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:12:49,498 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:49] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:12:49,503 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:49] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:12:54,499 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:54] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:12:54,502 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:54] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:12:57,732 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:57] "POST /command HTTP/1.1" 200 -
+2025-04-18 15:12:57,744 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:57] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:12:57,756 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:57] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:12:59,511 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:59] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:12:59,516 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:12:59] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:13:04,973 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:13:04] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:13:04,977 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:13:04] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:13:09,973 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:13:09] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:13:09,977 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:13:09] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:13:14,973 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:13:14] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:13:14,977 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:13:14] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:13:19,964 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:13:19] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:13:19,968 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:13:19] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:13:24,973 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:13:24] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:13:24,977 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:13:24] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:13:29,973 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:13:29] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:13:29,978 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:13:29] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:13:34,969 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:13:34] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:13:34,973 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:13:34] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:13:39,973 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:13:39] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:13:39,977 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:13:39] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:13:44,977 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:13:44] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:13:44,985 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:13:44] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:13:49,965 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:13:49] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:13:49,969 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:13:49] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:13:54,970 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:13:54] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:13:54,973 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:13:54] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:13:59,499 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:13:59] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:13:59,503 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:13:59] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:14:04,500 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:14:04] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:14:04,504 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:14:04] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:14:09,499 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:14:09] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:14:09,503 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:14:09] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:14:13,255 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=False, redirect=None, status=3)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1000)'))': /v1/me/player/play
+2025-04-18 15:14:14,969 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:14:14] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:14:14,974 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:14:14] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:14:18,858 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=False, redirect=None, status=3)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000203A48FBD10>, 'Connection to api.spotify.com timed out. (connect timeout=5)')': /v1/me/player/play
+2025-04-18 15:14:19,971 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:14:19] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:14:19,976 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:14:19] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:14:24,501 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:14:24] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:14:24,506 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:14:24] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:14:26,214 - app - ERROR - Spotify error: HTTPSConnectionPool(host='api.spotify.com', port=443): Read timed out. (read timeout=5)
+2025-04-18 15:14:26,214 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:14:26] "[35m[1mPOST /command HTTP/1.1[0m" 500 -
+2025-04-18 15:14:26,220 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:14:26] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:14:26,224 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:14:26] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:14:29,499 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:14:29] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:14:29,504 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:14:29] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:14:34,499 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:14:34] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:14:34,503 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:14:34] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:14:39,499 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:14:39] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:14:39,503 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:14:39] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:14:43,705 - app - ERROR - Spotify error: HTTPSConnectionPool(host='api.spotify.com', port=443): Read timed out. (read timeout=5)
+2025-04-18 15:14:43,705 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:14:43] "[35m[1mPOST /command HTTP/1.1[0m" 500 -
+2025-04-18 15:14:43,711 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:14:43] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:14:43,716 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:14:43] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:14:44,499 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:14:44] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:14:44,503 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:14:44] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:14:49,499 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:14:49] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:14:49,504 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:14:49] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:14:54,499 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:14:54] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:14:54,503 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:14:54] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:14:59,499 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:14:59] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:14:59,503 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:14:59] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:15:00,672 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:15:00] "POST /command HTTP/1.1" 200 -
+2025-04-18 15:15:00,683 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:15:00] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:15:00,696 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:15:00] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:15:04,500 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:15:04] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:15:04,504 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:15:04] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:15:09,516 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:15:09] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:15:09,520 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:15:09] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:15:14,964 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:15:14] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:15:14,968 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:15:14] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:15:19,971 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:15:19] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:15:19,975 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:15:19] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:15:24,976 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:15:24] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:15:24,981 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:15:24] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:15:29,976 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:15:29] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:15:29,981 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:15:29] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:15:34,962 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:15:34] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:15:34,966 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:15:34] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:15:39,966 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:15:39] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:15:39,970 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:15:39] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:15:44,970 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:15:44] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:15:44,975 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:15:44] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:15:49,970 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:15:49] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:15:49,975 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:15:49] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:15:54,975 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:15:54] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:15:54,979 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:15:54] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:15:59,968 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:15:59] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:15:59,973 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:15:59] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:16:04,969 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:16:04] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:16:04,973 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:16:04] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:16:09,963 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:16:09] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:16:09,967 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:16:09] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:16:32,970 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:16:32] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:16:32,973 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:16:32] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:17:32,975 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:17:32] "GET /health HTTP/1.1" 200 -
+2025-04-18 15:17:32,981 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:17:32] "GET /logs HTTP/1.1" 200 -
+2025-04-18 15:24:08,808 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.35.50.255:5000
+2025-04-18 15:24:08,808 - werkzeug - INFO - [33mPress CTRL+C to quit[0m

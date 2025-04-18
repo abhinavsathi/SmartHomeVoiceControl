@@ -223,3 +223,59 @@
 2025-04-06 21:30:17,301 - voice_assistant - INFO - Predicted intent: farewell (confidence: 0.58)
 2025-04-06 21:30:31,223 - voice_assistant - INFO - Predicted intent: set_ac_temperature (confidence: 0.07)
 2025-04-06 21:30:31,223 - voice_assistant - WARNING - Low confidence prediction: set_ac_temperature (0.07)
+2025-04-18 15:11:23,532 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-18 15:11:23,541 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.35.50.255:5001
+2025-04-18 15:11:23,541 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 15:11:49,246 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:11:49] "GET /socket.io/?EIO=4&transport=polling&t=PP8Hfmw HTTP/1.1" 200 -
+2025-04-18 15:11:49,250 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:11:49] "POST /socket.io/?EIO=4&transport=polling&t=PP8Hfn0&sid=jbvyDaHZmM8fqwI6AAAA HTTP/1.1" 200 -
+2025-04-18 15:11:49,254 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:11:49] "GET /socket.io/?EIO=4&transport=polling&t=PP8Hfn1&sid=jbvyDaHZmM8fqwI6AAAA HTTP/1.1" 200 -
+2025-04-18 15:12:44,652 - voice_assistant - INFO - Predicted intent: play_music (confidence: 0.77)
+2025-04-18 15:12:56,130 - voice_assistant - INFO - Predicted intent: play_music (confidence: 0.77)
+2025-04-18 15:14:11,478 - voice_assistant - INFO - Predicted intent: play_music (confidence: 0.77)
+2025-04-18 15:14:38,585 - voice_assistant - INFO - Predicted intent: play_music (confidence: 0.77)
+2025-04-18 15:14:58,052 - voice_assistant - INFO - Predicted intent: play_music (confidence: 0.97)
+2025-04-18 15:19:20,600 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-18 15:19:20,610 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.35.50.255:5001
+2025-04-18 15:19:20,610 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 15:19:20,976 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:19:20] "GET /socket.io/?EIO=4&transport=polling&t=PP8JO3D HTTP/1.1" 200 -
+2025-04-18 15:19:20,981 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:19:20] "POST /socket.io/?EIO=4&transport=polling&t=PP8JO3I&sid=lXp6f47lvTQsDDuvAAAA HTTP/1.1" 200 -
+2025-04-18 15:19:20,985 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:19:20] "GET /socket.io/?EIO=4&transport=polling&t=PP8JO3J&sid=lXp6f47lvTQsDDuvAAAA HTTP/1.1" 200 -
+2025-04-18 15:19:39,358 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:19:39] "GET /socket.io/?EIO=4&transport=polling&t=PP8JSYR HTTP/1.1" 200 -
+2025-04-18 15:19:39,392 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:19:39] "POST /socket.io/?EIO=4&transport=polling&t=PP8JSY-&sid=_n0A2iSDFjT-oEW1AAAC HTTP/1.1" 200 -
+2025-04-18 15:19:39,394 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:19:39] "GET /socket.io/?EIO=4&transport=polling&t=PP8JSY_&sid=_n0A2iSDFjT-oEW1AAAC HTTP/1.1" 200 -
+2025-04-18 15:19:39,980 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:19:39] "GET /socket.io/?EIO=4&transport=polling&t=PP8JSZ5&sid=_n0A2iSDFjT-oEW1AAAC HTTP/1.1" 200 -
+2025-04-18 15:20:46,404 - voice_assistant - INFO - Predicted intent: set_ac_temperature (confidence: 0.07)
+2025-04-18 15:20:46,404 - voice_assistant - WARNING - Low confidence prediction: set_ac_temperature (0.07)
+2025-04-18 15:21:02,889 - voice_assistant - INFO - Predicted intent: play_music (confidence: 0.77)
+2025-04-18 15:24:18,784 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-18 15:24:18,793 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.35.50.255:5001
+2025-04-18 15:24:18,794 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 15:24:20,969 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:24:20] "GET /socket.io/?EIO=4&transport=polling&t=PP8KXIb HTTP/1.1" 200 -
+2025-04-18 15:24:20,973 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:24:20] "GET /socket.io/?EIO=4&transport=polling&t=PP8KXIb HTTP/1.1" 200 -
+2025-04-18 15:24:20,974 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:24:20] "POST /socket.io/?EIO=4&transport=polling&t=PP8KXIh&sid=nFqAOKrsaMZdJ0m9AAAA HTTP/1.1" 200 -
+2025-04-18 15:24:20,977 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:24:20] "GET /socket.io/?EIO=4&transport=polling&t=PP8KXIi&sid=nFqAOKrsaMZdJ0m9AAAA HTTP/1.1" 200 -
+2025-04-18 15:24:20,980 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:24:20] "POST /socket.io/?EIO=4&transport=polling&t=PP8KXIl&sid=wVDboSIFbAy6EbmGAAAB HTTP/1.1" 200 -
+2025-04-18 15:24:20,981 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:24:20] "GET /socket.io/?EIO=4&transport=polling&t=PP8KXIm&sid=wVDboSIFbAy6EbmGAAAB HTTP/1.1" 200 -
+2025-04-18 15:24:20,987 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:24:20] "GET /socket.io/?EIO=4&transport=polling&t=PP8KXIu&sid=wVDboSIFbAy6EbmGAAAB HTTP/1.1" 200 -
+2025-04-18 15:25:05,517 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:25:05] "GET /socket.io/?EIO=4&transport=polling&t=PP8KiAg HTTP/1.1" 200 -
+2025-04-18 15:25:05,521 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:25:05] "POST /socket.io/?EIO=4&transport=polling&t=PP8KiAm&sid=BEtI8Iv0pNG5bcobAAAE HTTP/1.1" 200 -
+2025-04-18 15:25:05,525 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:25:05] "GET /socket.io/?EIO=4&transport=polling&t=PP8KiAn&sid=BEtI8Iv0pNG5bcobAAAE HTTP/1.1" 200 -
+2025-04-18 15:27:20,569 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:27:20] "GET /socket.io/?EIO=4&transport=websocket&sid=BEtI8Iv0pNG5bcobAAAE HTTP/1.1" 200 -
+2025-04-18 15:27:20,593 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:27:20] "GET /socket.io/?EIO=4&transport=polling&t=PP8LD9D HTTP/1.1" 200 -
+2025-04-18 15:27:20,602 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:27:20] "POST /socket.io/?EIO=4&transport=polling&t=PP8LD9N&sid=CBTcmlhcRJdVcdqQAAAG HTTP/1.1" 200 -
+2025-04-18 15:27:20,605 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:27:20] "GET /socket.io/?EIO=4&transport=polling&t=PP8LD9O&sid=CBTcmlhcRJdVcdqQAAAG HTTP/1.1" 200 -
+2025-04-18 15:27:20,611 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:27:20] "GET /socket.io/?EIO=4&transport=polling&t=PP8LD9X&sid=CBTcmlhcRJdVcdqQAAAG HTTP/1.1" 200 -
+2025-04-18 15:28:28,157 - voice_assistant - ERROR - Google API error: recognition request failed: Timeout while reading response from Server
+2025-04-18 15:28:32,361 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:28:32] "GET /socket.io/?EIO=4&transport=websocket&sid=CBTcmlhcRJdVcdqQAAAG HTTP/1.1" 200 -
+2025-04-18 15:28:33,002 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:28:33] "GET /socket.io/?EIO=4&transport=polling&t=PP8LUqe HTTP/1.1" 200 -
+2025-04-18 15:28:33,007 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:28:33] "POST /socket.io/?EIO=4&transport=polling&t=PP8LUqj&sid=V92EQUiqoNzqQ4_PAAAI HTTP/1.1" 200 -
+2025-04-18 15:28:33,009 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:28:33] "GET /socket.io/?EIO=4&transport=polling&t=PP8LUqj.0&sid=V92EQUiqoNzqQ4_PAAAI HTTP/1.1" 200 -

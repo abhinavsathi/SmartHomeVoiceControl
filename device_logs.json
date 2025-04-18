@@ -478,5 +478,121 @@
         "params": {},
         "status": "success",
         "timestamp": "2025-04-06 21:29:55"
+    },
+    {
+        "command": "play_music",
+        "params": {},
+        "status": "success",
+        "timestamp": "2025-04-18 14:53:45"
+    },
+    {
+        "command": "stop_music",
+        "params": {},
+        "status": "success",
+        "timestamp": "2025-04-18 14:53:56"
+    },
+    {
+        "command": "turn_off_light",
+        "params": {},
+        "status": "success",
+        "timestamp": "2025-04-18 14:53:59"
+    },
+    {
+        "command": "turn_on_light",
+        "params": {},
+        "status": "success",
+        "timestamp": "2025-04-18 14:54:02"
+    },
+    {
+        "command": "turn_on_light",
+        "params": {},
+        "status": "success",
+        "timestamp": "2025-04-18 14:54:06"
+    },
+    {
+        "command": "turn_off_light",
+        "params": {},
+        "status": "success",
+        "timestamp": "2025-04-18 14:54:08"
+    },
+    {
+        "command": "turn_off_fan",
+        "params": {},
+        "status": "success",
+        "timestamp": "2025-04-18 14:54:10"
+    },
+    {
+        "command": "turn_on_fan",
+        "params": {},
+        "status": "success",
+        "timestamp": "2025-04-18 14:54:11"
+    },
+    {
+        "command": "turn_on_fan",
+        "params": {},
+        "status": "success",
+        "timestamp": "2025-04-18 14:54:13"
+    },
+    {
+        "command": "turn_off_fan",
+        "params": {},
+        "status": "success",
+        "timestamp": "2025-04-18 14:54:14"
+    },
+    {
+        "command": "unlock_front_door",
+        "params": {},
+        "status": "success",
+        "timestamp": "2025-04-18 14:54:15"
+    },
+    {
+        "command": "lock_front_door",
+        "params": {},
+        "status": "success",
+        "timestamp": "2025-04-18 14:54:16"
+    },
+    {
+        "command": "set_ac_temperature",
+        "params": {
+            "temperature": 25
+        },
+        "status": "success",
+        "timestamp": "2025-04-18 14:54:21"
+    },
+    {
+        "command": "play_music",
+        "params": {},
+        "status": "success",
+        "timestamp": "2025-04-18 15:12:24"
+    },
+    {
+        "command": "play_music",
+        "params": {},
+        "status": "success",
+        "timestamp": "2025-04-18 15:12:30"
+    },
+    {
+        "command": "stop_music",
+        "params": {},
+        "status": "success",
+        "timestamp": "2025-04-18 15:12:35"
+    },
+    {
+        "command": "play_music",
+        "params": {},
+        "status": "success",
+        "timestamp": "2025-04-18 15:12:45"
+    },
+    {
+        "command": "play_music",
+        "params": {},
+        "status": "success",
+        "timestamp": "2025-04-18 15:12:57"
+    },
+    {
+        "command": "play_music",
+        "params": {},
+        "status": "success",
+        "timestamp": "2025-04-18 15:15:00"
     }
 ]

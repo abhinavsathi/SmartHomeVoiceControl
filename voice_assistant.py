@@ -9,6 +9,7 @@ from datetime import datetime
 import logging
 from flask import Flask
 from flask_socketio import SocketIO
+import re
 
 # Configure logging
 logging.basicConfig(
@@ -87,6 +88,20 @@ def recognize_speech(audio_data_np, fs):
         print("Couldn't request results, check your internet connection. 📡")
         return None
 
+# Extract temperature
+def extract_temperature(command):
+    match = re.search(r'(\d+)(?:\s*degrees|\s*celsius)?', command)
+    if match:
+        temp = int(match.group(1))
+        if 16 <= temp <= 30:
+            return temp
+    return None
+
+# Extract song name
+def extract_song_name(command):
+    match = re.search(r'play (?:the )?song ([\w\s]+)', command, re.IGNORECASE)
+    return match.group(1).strip() if match else None
+
 # Predict intent
 def predict_intent(command):
     try:
@@ -96,21 +111,22 @@ def predict_intent(command):
         logger.info(f"Predicted intent: {predicted_intent} (confidence: {confidence:.2f})")
         if confidence < 0.4:
             logger.warning(f"Low confidence prediction: {predicted_intent} ({confidence:.2f})")
-            return "unknown"
-        return predicted_intent
+            return "unknown", {}
+        
+        params = {}
+        if predicted_intent == "set_ac_temperature":
+            temp = extract_temperature(command)
+            if temp:
+                params["temperature"] = temp
+        elif predicted_intent == "play_music":
+            song_name = extract_song_name(command)
+            if song_name:
+                params["song_name"] = song_name
+                
+        return predicted_intent, params
     except Exception as e:
         logger.error(f"Error predicting intent: {e}")
-        return "unknown"
-
-# Extract temperature
-def extract_temperature(command):
-    import re
-    match = re.search(r'(\d+)(?:\s*degrees|\s*celsius)?', command)
-    if match:
-        temp = int(match.group(1))
-        if 16 <= temp <= 30:
-            return temp
-    return None
+        return "unknown", {}
 
 # Send command to API
 def send_command_to_home(command, params=None):
@@ -142,11 +158,11 @@ def listen_once():
     audio_data_np, fs = record_audio()
     command = recognize_speech(audio_data_np, fs)
     if command:
-        intent = predict_intent(command)
+        intent, params = predict_intent(command)
         if intent == "set_ac_temperature":
-            temp = extract_temperature(command)
+            temp = params.get("temperature")
             if temp:
-                success = send_command_to_home(intent, {"temperature": temp})
+                success = send_command_to_home(intent, params)
                 socketio.emit('command_result', {"message": f"Set temp to {temp}°C", "status": "success" if success else "error"})
             else:
                 socketio.emit('command_result', {"message": "Specify a temp (16-30°C)", "status": "error"})
@@ -156,14 +172,15 @@ def listen_once():
                 "farewell": "Goodbye! See you soon.",
                 "exit": "Shutting down... Bye!",
                 "status_check": "Checking status... All systems nominal!",
-                "help": "I can turn lights on/off, play music, lock doors, and more. Try 'play music'!"
+                "help": "I can turn lights on/off, play music, lock doors, and more. Try 'play the song Sunflower'!"
             }
             socketio.emit('command_result', {"message": messages.get(intent, "Command executed"), "status": "success"})
         elif intent != "unknown":
-            success = send_command_to_home(intent)
+            success = send_command_to_home(intent, params)
             socketio.emit('command_result', {"message": f"Executed {intent}", "status": "success" if success else "error"})
         else:
             socketio.emit('command_result', {"message": "Sorry, I didn’t get that", "status": "error"})
+
 if __name__ == "__main__":
     print("Starting Voice Assistant with SocketIO on port 5001...")
     socketio.run(app, host='0.0.0.0', port=5001)

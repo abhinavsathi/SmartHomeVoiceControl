@@ -3,6 +3,8 @@ import json
 import os
 from datetime import datetime
 import logging
+import spotipy
+from spotipy.oauth2 import SpotifyOAuth
 
 # Configure logging
 logging.basicConfig(
@@ -27,8 +29,8 @@ DEVICE_STATE = {
 }
 
 # Spotify setup
-SPOTIFY_CLIENT_ID = "b6e627d8f4224a968b66b3e6c8c65da9"  # Replace with your Client ID
-SPOTIFY_CLIENT_SECRET = "fe23d961597c44249dfd675046319f5e"  # Replace with your Client Secret
+SPOTIFY_CLIENT_ID = "b6e627d8f4224a968b66b3e6c8c65da9"  # Your Client ID
+SPOTIFY_CLIENT_SECRET = "fe23d961597c44249dfd675046319f5e"  # Your Client Secret
 SPOTIFY_REDIRECT_URI = "http://127.0.0.1:5000/callback"
 SPOTIFY_SCOPE = "user-read-playback-state user-modify-playback-state"
 sp_oauth = SpotifyOAuth(
@@ -81,13 +83,13 @@ def get_logs():
         return jsonify({"error": str(e)}), 500
 
 # Dynamic responses for commands
-def get_dynamic_response(command):
+def get_dynamic_response(command, params=None):
     responses = {
         "turn_on_light": "💡 Lights turned ON. Let there be light!",
         "turn_off_light": "🌑 Lights turned OFF. Going dark...",
         "turn_on_fan": "🌀 Fan is spinning! Cooling things down...",
         "turn_off_fan": "❄️ Fan turned OFF. Calm and quiet now.",
-        "play_music": "🎵 Music started! Let's vibe to some beats!",
+        "play_music": f"🎵 Playing '{params.get('song_name', 'music')}' on Spotify!",
         "stop_music": "🔇 Music stopped. Silence restored.",
         "lock_front_door": "🔒 Front door locked. Home secured.",
         "unlock_front_door": "🔓 Front door unlocked. Be careful!",
@@ -96,7 +98,10 @@ def get_dynamic_response(command):
         "activate_away_mode": "🏡 Away mode activated. Be safe!",
         "set_ac_temperature": "🌡️ Temperature set successfully! Adjusting climate control..."
     }
-    return responses.get(command, "✅ Command executed successfully!")
+    response = responses.get(command, "✅ Command executed successfully!")
+    if command == "set_ac_temperature" and params and "temperature" in params:
+        response = f"🌡️ Temperature set to {params['temperature']}°C. Adjusting climate control..."
+    return response
 
 # Update device state based on command
 def update_device_state(command, params=None):
@@ -125,7 +130,6 @@ def update_device_state(command, params=None):
     elif command == "activate_away_mode":
         DEVICE_STATE.update({"light": "off", "fan": "off", "front_door": "locked", "music": "stopped"})
 
-
 # Endpoint to control devices
 @app.route("/command", methods=["POST"])
 def handle_command():
@@ -140,14 +144,53 @@ def handle_command():
         if not command:
             return jsonify({"status": "error", "message": "No command received."}), 400
         
-        # Update device state
-        update_device_state(command, params)
-        
-        # Get a fun, interactive response
-        response_text = get_dynamic_response(command)
-        if command == "set_ac_temperature" and "temperature" in params:
-            temp = params["temperature"]
-            response_text = f"🌡️ Temperature set to {temp}°C. Adjusting climate control..."
+        # Handle Spotify for music commands
+        if command == "play_music":
+            sp = get_spotify_client()
+            if sp:
+                try:
+                    song_name = params.get("song_name")
+                    logger.info(f"Attempting to play song: {song_name}")
+                    if song_name:
+                        results = sp.search(q=f"track:{song_name}", type="track", limit=1)
+                        tracks = results["tracks"]["items"]
+                        if tracks:
+                            track_uri = tracks[0]["uri"]
+                            logger.info(f"Found track URI: {track_uri}")
+                            sp.start_playback(uris=[track_uri])
+                            update_device_state(command, params)
+                            response_text = get_dynamic_response(command, params)
+                        else:
+                            logger.warning(f"Song '{song_name}' not found, playing default")
+                            sp.start_playback(uris=["spotify:track:4cOdK2wGLETKBW3PvgPWqT"])  # Yesterday
+                            update_device_state(command, params)
+                            response_text = f"🎵 Song '{song_name}' not found, playing default track!"
+                    else:
+                        logger.info("No song name provided, playing default")
+                        sp.start_playback(uris=["spotify:track:4cOdK2wGLETKBW3PvgPWqT"])  # Yesterday
+                        update_device_state(command, params)
+                        response_text = get_dynamic_response(command, params)
+                except Exception as e:
+                    logger.error(f"Spotify error: {str(e)}")
+                    return jsonify({"status": "error", "message": f"Spotify error: {str(e)}"}), 500
+            else:
+                return jsonify({"status": "error", "message": "Spotify not authenticated. Check terminal."}), 401
+        elif command == "stop_music":
+            sp = get_spotify_client()
+            if sp:
+                try:
+                    sp.pause_playback()
+                    update_device_state(command, params)
+                    response_text = get_dynamic_response(command, params)
+                except Exception as e:
+                    logger.error(f"Spotify error: {str(e)}")
+                    return jsonify({"status": "error", "message": f"Spotify error: {str(e)}"}), 500
+            else:
+                return jsonify({"status": "error", "message": "Spotify not authenticated. Check terminal."}), 401
+        else:
+            # Update device state for non-Spotify commands
+            update_device_state(command, params)
+            response_text = get_dynamic_response(command, params)
 
         # Log the command with timestamp
         log_entry = {
@@ -192,24 +235,35 @@ def handle_text_command():
         # Import functionality from voice_assistant
         from voice_assistant import predict_intent, extract_temperature
         
-        intent = predict_intent(command)
+        intent, params = predict_intent(command)
         
         if intent == "set_ac_temperature":
-            temp = extract_temperature(command)
+            temp = params.get("temperature")
             if temp:
-                params = {"temperature": temp}
                 update_device_state(intent, params)
                 response_text = f"🌡️ Temperature set to {temp}°C. Adjusting climate control..."
             else:
                 return jsonify({"status": "error", "message": "Please specify a valid temperature (16-30°C)"}), 400
         else:
-            update_device_state(intent)
-            response_text = get_dynamic_response(intent)
+            update_device_state(intent, params)
+            response_text = get_dynamic_response(intent, params)
             
         return jsonify({"status": "success", "message": response_text})
     except Exception as e:
         logger.error(f"Error in text command handler: {str(e)}")
         return jsonify({"status": "error", "message": f"Server error: {str(e)}"}), 500
 
+# Spotify OAuth callback
+@app.route("/callback")
+def callback():
+    try:
+        code = request.args.get('code')
+        token_info = sp_oauth.get_access_token(code, check_cache=False)
+        logger.info("Spotify authenticated successfully")
+        return "Spotify authenticated! Return to terminal."
+    except Exception as e:
+        logger.error(f"Spotify callback error: {str(e)}")
+        return f"Authentication failed: {str(e)}", 500
+
 if __name__ == "__main__":
-    app.run(debug=True, host='0.0.0.0')
+    app.run(debug=False, host='0.0.0.0', port=5000)
