@@ -26,6 +26,33 @@ DEVICE_STATE = {
     "ac_temp": 22
 }
 
+# Spotify setup
+SPOTIFY_CLIENT_ID = "b6e627d8f4224a968b66b3e6c8c65da9"  # Replace with your Client ID
+SPOTIFY_CLIENT_SECRET = "fe23d961597c44249dfd675046319f5e"  # Replace with your Client Secret
+SPOTIFY_REDIRECT_URI = "http://127.0.0.1:5000/callback"
+SPOTIFY_SCOPE = "user-read-playback-state user-modify-playback-state"
+sp_oauth = SpotifyOAuth(
+    client_id=SPOTIFY_CLIENT_ID,
+    client_secret=SPOTIFY_CLIENT_SECRET,
+    redirect_uri=SPOTIFY_REDIRECT_URI,
+    scope=SPOTIFY_SCOPE,
+    cache_path=".spotifycache"
+)
+
+# Load Spotify token or authenticate
+def get_spotify_client():
+    try:
+        token_info = sp_oauth.get_cached_token()
+        if not token_info:
+            auth_url = sp_oauth.get_authorize_url()
+            logger.info(f"Open this URL in your browser: {auth_url}")
+            print(f"Open this URL in your browser: {auth_url}")
+            return None
+        return spotipy.Spotify(auth=token_info['access_token'])
+    except Exception as e:
+        logger.error(f"Spotify token error: {str(e)}")
+        return None
+
 # Load device logs for UI
 def load_logs():
     try:
