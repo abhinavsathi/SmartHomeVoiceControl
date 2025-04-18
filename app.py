@@ -3,6 +3,8 @@ import json
 import os
 from datetime import datetime
 import logging
+import spotipy
+from spotipy.oauth2 import SpotifyOAuth
 
 # Configure logging
 logging.basicConfig(
@@ -25,6 +27,33 @@ DEVICE_STATE = {
     "front_door": "locked",
     "ac_temp": 22
 }
+
+# Spotify setup
+SPOTIFY_CLIENT_ID = "b6e627d8f4224a968b66b3e6c8c65da9"  # Replace with your Client ID
+SPOTIFY_CLIENT_SECRET = "fe23d961597c44249dfd675046319f5e"  # Replace with your Client Secret
+SPOTIFY_REDIRECT_URI = "http://127.0.0.1:5000/callback"
+SPOTIFY_SCOPE = "user-read-playback-state user-modify-playback-state"
+sp_oauth = SpotifyOAuth(
+    client_id=SPOTIFY_CLIENT_ID,
+    client_secret=SPOTIFY_CLIENT_SECRET,
+    redirect_uri=SPOTIFY_REDIRECT_URI,
+    scope=SPOTIFY_SCOPE,
+    cache_path=".spotifycache"
+)
+
+# Load Spotify token or authenticate
+def get_spotify_client():
+    try:
+        token_info = sp_oauth.get_cached_token()
+        if not token_info:
+            auth_url = sp_oauth.get_authorize_url()
+            logger.info(f"Open this URL in your browser: {auth_url}")
+            print(f"Open this URL in your browser: {auth_url}")
+            return None
+        return spotipy.Spotify(auth=token_info['access_token'])
+    except Exception as e:
+        logger.error(f"Spotify token error: {str(e)}")
+        return None
 
 # Load device logs for UI
 def load_logs():
@@ -98,7 +127,6 @@ def update_device_state(command, params=None):
     elif command == "activate_away_mode":
         DEVICE_STATE.update({"light": "off", "fan": "off", "front_door": "locked", "music": "stopped"})
 
-
 # Endpoint to control devices
 @app.route("/command", methods=["POST"])
 def handle_command():
@@ -113,14 +141,38 @@ def handle_command():
         if not command:
             return jsonify({"status": "error", "message": "No command received."}), 400
         
-        # Update device state
-        update_device_state(command, params)
-        
-        # Get a fun, interactive response
-        response_text = get_dynamic_response(command)
-        if command == "set_ac_temperature" and "temperature" in params:
-            temp = params["temperature"]
-            response_text = f"🌡️ Temperature set to {temp}°C. Adjusting climate control..."
+        # Handle Spotify for music commands
+        if command == "play_music":
+            sp = get_spotify_client()
+            if sp:
+                try:
+                    sp.start_playback(uris=["spotify:track:4cOdK2wGLETKBW3PvgPWqT"])  # The Beatles - Yesterday
+                    update_device_state(command, params)
+                    response_text = get_dynamic_response(command)
+                except Exception as e:
+                    logger.error(f"Spotify error: {str(e)}")
+                    return jsonify({"status": "error", "message": f"Spotify error: {str(e)}"}), 500
+            else:
+                return jsonify({"status": "error", "message": "Spotify not authenticated. Check terminal."}), 401
+        elif command == "stop_music":
+            sp = get_spotify_client()
+            if sp:
+                try:
+                    sp.pause_playback()
+                    update_device_state(command, params)
+                    response_text = get_dynamic_response(command)
+                except Exception as e:
+                    logger.error(f"Spotify error: {str(e)}")
+                    return jsonify({"status": "error", "message": f"Spotify error: {str(e)}"}), 500
+            else:
+                return jsonify({"status": "error", "message": "Spotify not authenticated. Check terminal."}), 401
+        else:
+            # Update device state for non-Spotify commands
+            update_device_state(command, params)
+            response_text = get_dynamic_response(command)
+            if command == "set_ac_temperature" and "temperature" in params:
+                temp = params["temperature"]
+                response_text = f"🌡️ Temperature set to {temp}°C. Adjusting climate control..."
 
         # Log the command with timestamp
         log_entry = {
@@ -184,5 +236,17 @@ def handle_text_command():
         logger.error(f"Error in text command handler: {str(e)}")
         return jsonify({"status": "error", "message": f"Server error: {str(e)}"}), 500
 
+# Spotify OAuth callback
+@app.route("/callback")
+def callback():
+    try:
+        code = request.args.get('code')
+        token_info = sp_oauth.get_access_token(code, check_cache=False)
+        logger.info("Spotify authenticated successfully")
+        return "Spotify authenticated! Return to terminal."
+    except Exception as e:
+        logger.error(f"Spotify callback error: {str(e)}")
+        return f"Authentication failed: {str(e)}", 500
+
 if __name__ == "__main__":
-    app.run(debug=True, host='0.0.0.0')
+    app.run(debug=False, host='0.0.0.0', port=5000)  # Debug off to avoid multiple URL prints
