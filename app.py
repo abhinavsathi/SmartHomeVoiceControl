@@ -29,8 +29,8 @@ DEVICE_STATE = {
 }
 
 # Spotify setup
-SPOTIFY_CLIENT_ID = "b6e627d8f4224a968b66b3e6c8c65da9"  # Your Client ID
-SPOTIFY_CLIENT_SECRET = "fe23d961597c44249dfd675046319f5e"  # Your Client Secret
+SPOTIFY_CLIENT_ID = "b6e627d8f4224a968b66b3e6c8c65da9"  # Replace with your Client ID
+SPOTIFY_CLIENT_SECRET = "fe23d961597c44249dfd675046319f5e"  # Replace with your Client Secret
 SPOTIFY_REDIRECT_URI = "http://127.0.0.1:5000/callback"
 SPOTIFY_SCOPE = "user-read-playback-state user-modify-playback-state"
 sp_oauth = SpotifyOAuth(
@@ -149,27 +149,9 @@ def handle_command():
             sp = get_spotify_client()
             if sp:
                 try:
-                    song_name = params.get("song_name")
-                    logger.info(f"Attempting to play song: {song_name}")
-                    if song_name:
-                        results = sp.search(q=f"track:{song_name}", type="track", limit=1)
-                        tracks = results["tracks"]["items"]
-                        if tracks:
-                            track_uri = tracks[0]["uri"]
-                            logger.info(f"Found track URI: {track_uri}")
-                            sp.start_playback(uris=[track_uri])
-                            update_device_state(command, params)
-                            response_text = get_dynamic_response(command, params)
-                        else:
-                            logger.warning(f"Song '{song_name}' not found, playing default")
-                            sp.start_playback(uris=["spotify:track:4cOdK2wGLETKBW3PvgPWqT"])  # Yesterday
-                            update_device_state(command, params)
-                            response_text = f"🎵 Song '{song_name}' not found, playing default track!"
-                    else:
-                        logger.info("No song name provided, playing default")
-                        sp.start_playback(uris=["spotify:track:4cOdK2wGLETKBW3PvgPWqT"])  # Yesterday
-                        update_device_state(command, params)
-                        response_text = get_dynamic_response(command, params)
+                    sp.start_playback(uris=["spotify:track:4cOdK2wGLETKBW3PvgPWqT"])  # The Beatles - Yesterday
+                    update_device_state(command, params)
+                    response_text = get_dynamic_response(command)
                 except Exception as e:
                     logger.error(f"Spotify error: {str(e)}")
                     return jsonify({"status": "error", "message": f"Spotify error: {str(e)}"}), 500
@@ -181,7 +163,7 @@ def handle_command():
                 try:
                     sp.pause_playback()
                     update_device_state(command, params)
-                    response_text = get_dynamic_response(command, params)
+                    response_text = get_dynamic_response(command)
                 except Exception as e:
                     logger.error(f"Spotify error: {str(e)}")
                     return jsonify({"status": "error", "message": f"Spotify error: {str(e)}"}), 500
@@ -190,7 +172,10 @@ def handle_command():
         else:
             # Update device state for non-Spotify commands
             update_device_state(command, params)
-            response_text = get_dynamic_response(command, params)
+            response_text = get_dynamic_response(command)
+            if command == "set_ac_temperature" and "temperature" in params:
+                temp = params["temperature"]
+                response_text = f"🌡️ Temperature set to {temp}°C. Adjusting climate control..."
 
         # Log the command with timestamp
         log_entry = {
@@ -266,4 +251,4 @@ def callback():
         return f"Authentication failed: {str(e)}", 500
 
 if __name__ == "__main__":
-    app.run(debug=False, host='0.0.0.0', port=5000)
+    app.run(debug=False, host='0.0.0.0', port=5000)  # Debug off to avoid multiple URL prints
