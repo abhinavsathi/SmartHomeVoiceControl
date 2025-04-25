@@ -10,6 +10,8 @@ import logging
 from flask import Flask
 from flask_socketio import SocketIO
 import re
+from google.cloud import speech
+import io
 
 # Configure logging
 logging.basicConfig(
@@ -52,7 +54,10 @@ def log_assistant_usage(command, predicted_intent, status):
         "status": status,
         "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     }
-    logs = json.load(open(LOG_FILE, "r")) if os.path.exists(LOG_FILE) else []
+    if os.path.exists(LOG_FILE):
+        logs = json.load(open(LOG_FILE, "r")) if os.path.exists(LOG_FILE) else []
+    else:
+        logs = []
     logs.append(log_entry)
     with open(LOG_FILE, "w") as file:
         json.dump(logs, file, indent=4)
@@ -71,23 +76,71 @@ def record_audio(duration=3, fs=44100):
         return None, None
 
 # Recognize speech
+# def recognize_speech(audio_data_np, fs):
+#     if audio_data_np is None or fs is None:
+#         return None
+#     recognizer = sr.Recognizer()
+#     audio = sr.AudioData(audio_data_np.tobytes(), fs, 2)
+#     try:
+#         command = recognizer.recognize_google(audio)
+#         print(f"You said: {command}")
+#         return command.lower()
+#     except sr.UnknownValueError:
+#         print("Sorry, I couldn't understand that. 🙁")
+#         return None
+#     except sr.RequestError as e:
+#         logger.error(f"Google API error: {e}")
+#         print("Couldn't request results, check your internet connection. 📡")
+#         return None
 def recognize_speech(audio_data_np, fs):
     if audio_data_np is None or fs is None:
         return None
-    recognizer = sr.Recognizer()
-    audio = sr.AudioData(audio_data_np.tobytes(), fs, 2)
+    
     try:
-        command = recognizer.recognize_google(audio)
-        print(f"You said: {command}")
-        return command.lower()
+        # For standard recognizer fallback
+        recognizer = sr.Recognizer()
+        audio = sr.AudioData(audio_data_np.tobytes(), fs, 2)
+        
+        # Try Google Cloud Speech-to-Text first
+        try:
+            # Create Google client
+            client = speech.SpeechClient()
+            
+            # Convert audio to proper format
+            content = audio.get_wav_data()
+            audio_google = speech.RecognitionAudio(content=content)
+            
+            config = speech.RecognitionConfig(
+                encoding=speech.RecognitionConfig.AudioEncoding.LINEAR16,
+                sample_rate_hertz=fs,
+                language_code="en-US",
+                model="command_and_search"
+            )
+            
+            response = client.recognize(config=config, audio=audio_google)
+            
+            for result in response.results:
+                command = result.alternatives[0].transcript
+                print(f"You said (Google Cloud): {command}")
+                logger.info(f"Google Cloud STT: {command}")
+                return command.lower()
+            
+            # If no result from Google Cloud, fall back to standard recognizer
+            raise Exception("No result from Google Cloud STT")
+            
+        except Exception as e:
+            logger.warning(f"Google Cloud STT failed, falling back: {e}")
+            command = recognizer.recognize_google(audio)
+            print(f"You said (Fallback): {command}")
+            return command.lower()
+            
     except sr.UnknownValueError:
         print("Sorry, I couldn't understand that. 🙁")
         return None
     except sr.RequestError as e:
-        logger.error(f"Google API error: {e}")
+        logger.error(f"API error: {e}")
         print("Couldn't request results, check your internet connection. 📡")
         return None
-
 # Extract temperature
 def extract_temperature(command):
     match = re.search(r'(\d+)(?:\s*degrees|\s*celsius)?', command)
@@ -99,8 +152,14 @@ def extract_temperature(command):
 
 # Extract song name
 def extract_song_name(command):
-    match = re.search(r'play (?:the )?song ([\w\s]+)', command, re.IGNORECASE)
-    return match.group(1).strip() if match else None
+    # Relaxed regex to catch "play song X", "play the song X", etc.
+    match = re.search(r'play\s*(?:the\s*)?song\s+(.+)', command, re.IGNORECASE)
+    if match:
+        song_name = match.group(1).strip()
+        logger.info(f"Extracted song_name: {song_name}")
+        return song_name
+    logger.warning(f"No song name extracted from: {command}")
+    return None
 
 # Predict intent
 def predict_intent(command):

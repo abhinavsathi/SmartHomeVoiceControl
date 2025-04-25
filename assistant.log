@@ -279,3 +279,341 @@
 2025-04-18 15:28:33,002 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:28:33] "GET /socket.io/?EIO=4&transport=polling&t=PP8LUqe HTTP/1.1" 200 -
 2025-04-18 15:28:33,007 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:28:33] "POST /socket.io/?EIO=4&transport=polling&t=PP8LUqj&sid=V92EQUiqoNzqQ4_PAAAI HTTP/1.1" 200 -
 2025-04-18 15:28:33,009 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:28:33] "GET /socket.io/?EIO=4&transport=polling&t=PP8LUqj.0&sid=V92EQUiqoNzqQ4_PAAAI HTTP/1.1" 200 -
+2025-04-18 15:40:41,877 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-18 15:40:41,885 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.35.50.255:5001
+2025-04-18 15:40:41,885 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 15:40:42,969 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:40:42] "GET /socket.io/?EIO=4&transport=polling&t=PP8OH2L HTTP/1.1" 200 -
+2025-04-18 15:40:42,973 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:40:42] "GET /socket.io/?EIO=4&transport=polling&t=PP8OH2L HTTP/1.1" 200 -
+2025-04-18 15:40:42,975 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:40:42] "POST /socket.io/?EIO=4&transport=polling&t=PP8OH2T&sid=8XW2cXnBjlnyDmfaAAAA HTTP/1.1" 200 -
+2025-04-18 15:40:42,978 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:40:42] "GET /socket.io/?EIO=4&transport=polling&t=PP8OH2U&sid=8XW2cXnBjlnyDmfaAAAA HTTP/1.1" 200 -
+2025-04-18 15:40:42,981 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:40:42] "POST /socket.io/?EIO=4&transport=polling&t=PP8OH2W&sid=3vmYnSI6yCNZKZ-eAAAB HTTP/1.1" 200 -
+2025-04-18 15:40:42,983 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:40:42] "GET /socket.io/?EIO=4&transport=polling&t=PP8OH2X&sid=3vmYnSI6yCNZKZ-eAAAB HTTP/1.1" 200 -
+2025-04-18 15:40:42,989 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:40:42] "GET /socket.io/?EIO=4&transport=polling&t=PP8OH2g&sid=3vmYnSI6yCNZKZ-eAAAB HTTP/1.1" 200 -
+2025-04-18 15:40:43,976 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:40:43] "GET /socket.io/?EIO=4&transport=polling&t=PP8OHI5 HTTP/1.1" 200 -
+2025-04-18 15:40:43,980 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:40:43] "POST /socket.io/?EIO=4&transport=polling&t=PP8OHIA&sid=CexYvsb8kZlh9Ma3AAAE HTTP/1.1" 200 -
+2025-04-18 15:40:43,983 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:40:43] "GET /socket.io/?EIO=4&transport=polling&t=PP8OHIB&sid=CexYvsb8kZlh9Ma3AAAE HTTP/1.1" 200 -
+2025-04-18 15:40:52,399 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:40:52] "GET /socket.io/?EIO=4&transport=websocket&sid=CexYvsb8kZlh9Ma3AAAE HTTP/1.1" 200 -
+2025-04-18 15:40:52,501 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:40:52] "GET /socket.io/?EIO=4&transport=polling&t=PP8OJNJ HTTP/1.1" 200 -
+2025-04-18 15:40:52,506 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:40:52] "POST /socket.io/?EIO=4&transport=polling&t=PP8OJNN&sid=jFa7dPHjlZTFxBmLAAAG HTTP/1.1" 200 -
+2025-04-18 15:40:52,508 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:40:52] "GET /socket.io/?EIO=4&transport=polling&t=PP8OJNO&sid=jFa7dPHjlZTFxBmLAAAG HTTP/1.1" 200 -
+2025-04-18 15:41:08,730 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:41:08] "GET /socket.io/?EIO=4&transport=websocket&sid=8XW2cXnBjlnyDmfaAAAA HTTP/1.1" 200 -
+2025-04-18 15:41:22,125 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:41:22] "GET /socket.io/?EIO=4&transport=websocket&sid=jFa7dPHjlZTFxBmLAAAG HTTP/1.1" 200 -
+2025-04-18 15:41:22,144 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:41:22] "GET /socket.io/?EIO=4&transport=polling&t=PP8OQcT HTTP/1.1" 200 -
+2025-04-18 15:41:22,154 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:41:22] "POST /socket.io/?EIO=4&transport=polling&t=PP8OQcc&sid=SixDfK2X9FcJDfG-AAAI HTTP/1.1" 200 -
+2025-04-18 15:41:22,159 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:41:22] "GET /socket.io/?EIO=4&transport=polling&t=PP8OQcd&sid=SixDfK2X9FcJDfG-AAAI HTTP/1.1" 200 -
+2025-04-18 15:41:22,889 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:41:22] "GET /socket.io/?EIO=4&transport=websocket&sid=SixDfK2X9FcJDfG-AAAI HTTP/1.1" 200 -
+2025-04-18 15:41:22,908 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:41:22] "GET /socket.io/?EIO=4&transport=polling&t=PP8OQoM HTTP/1.1" 200 -
+2025-04-18 15:41:22,917 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:41:22] "POST /socket.io/?EIO=4&transport=polling&t=PP8OQoX&sid=IId2q9uovcjNmzM6AAAK HTTP/1.1" 200 -
+2025-04-18 15:41:22,920 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:41:22] "GET /socket.io/?EIO=4&transport=polling&t=PP8OQoY&sid=IId2q9uovcjNmzM6AAAK HTTP/1.1" 200 -
+2025-04-18 15:41:24,659 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:41:24] "GET /socket.io/?EIO=4&transport=websocket&sid=IId2q9uovcjNmzM6AAAK HTTP/1.1" 200 -
+2025-04-18 15:41:24,956 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:41:24] "GET /socket.io/?EIO=4&transport=polling&t=PP8ORIO HTTP/1.1" 200 -
+2025-04-18 15:41:24,964 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:41:24] "POST /socket.io/?EIO=4&transport=polling&t=PP8ORIW&sid=uA5vWB9rJe2W-W7_AAAM HTTP/1.1" 200 -
+2025-04-18 15:41:24,966 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:41:24] "GET /socket.io/?EIO=4&transport=polling&t=PP8ORIX&sid=uA5vWB9rJe2W-W7_AAAM HTTP/1.1" 200 -
+2025-04-18 15:41:59,000 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:41:59] "GET /socket.io/?EIO=4&transport=websocket&sid=uA5vWB9rJe2W-W7_AAAM HTTP/1.1" 200 -
+2025-04-18 15:42:01,868 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:42:01] "GET /socket.io/?EIO=4&transport=websocket&sid=3vmYnSI6yCNZKZ-eAAAB HTTP/1.1" 200 -
+2025-04-18 15:42:08,259 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:42:08] "GET /socket.io/?EIO=4&transport=polling&t=PP8Obt0 HTTP/1.1" 200 -
+2025-04-18 15:42:08,269 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:42:08] "POST /socket.io/?EIO=4&transport=polling&t=PP8Obt9&sid=IG3Q3gwE8ksJigPzAAAO HTTP/1.1" 200 -
+2025-04-18 15:42:08,271 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:42:08] "GET /socket.io/?EIO=4&transport=polling&t=PP8ObtB&sid=IG3Q3gwE8ksJigPzAAAO HTTP/1.1" 200 -
+2025-04-18 15:42:08,284 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 15:42:08] "GET /socket.io/?EIO=4&transport=polling&t=PP8ObtR&sid=IG3Q3gwE8ksJigPzAAAO HTTP/1.1" 200 -
+2025-04-21 10:07:54,251 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-21 10:07:54,267 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.35.54.5:5001
+2025-04-21 10:07:54,267 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-21 10:08:31,255 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2025 10:08:31] "GET /socket.io/?EIO=4&transport=polling&t=PPMf09F HTTP/1.1" 200 -
+2025-04-21 10:08:31,269 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2025 10:08:31] "POST /socket.io/?EIO=4&transport=polling&t=PPMf09X&sid=GDSPf1VWVzvOpJiYAAAA HTTP/1.1" 200 -
+2025-04-21 10:08:31,276 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2025 10:08:31] "GET /socket.io/?EIO=4&transport=polling&t=PPMf09Z&sid=GDSPf1VWVzvOpJiYAAAA HTTP/1.1" 200 -
+2025-04-21 10:08:31,291 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2025 10:08:31] "GET /socket.io/?EIO=4&transport=polling&t=PPMf09t&sid=GDSPf1VWVzvOpJiYAAAA HTTP/1.1" 200 -
+2025-04-21 10:08:46,497 - voice_assistant - INFO - Predicted intent: set_ac_temperature (confidence: 0.07)
+2025-04-21 10:08:46,497 - voice_assistant - WARNING - Low confidence prediction: set_ac_temperature (0.07)
+2025-04-22 10:14:48,141 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-22 10:14:48,155 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.35.55.134:5001
+2025-04-22 10:14:48,155 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-22 10:15:50,381 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 10:15:50] "GET /socket.io/?EIO=4&transport=polling&t=PPRqH6c HTTP/1.1" 200 -
+2025-04-22 10:15:50,392 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 10:15:50] "POST /socket.io/?EIO=4&transport=polling&t=PPRqH6p&sid=X3H2rFVYCvxJMx-vAAAA HTTP/1.1" 200 -
+2025-04-22 10:15:50,397 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 10:15:50] "GET /socket.io/?EIO=4&transport=polling&t=PPRqH6s&sid=X3H2rFVYCvxJMx-vAAAA HTTP/1.1" 200 -
+2025-04-22 10:15:50,406 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 10:15:50] "GET /socket.io/?EIO=4&transport=polling&t=PPRqH72&sid=X3H2rFVYCvxJMx-vAAAA HTTP/1.1" 200 -
+2025-04-22 10:16:11,986 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 10:16:11] "GET /socket.io/?EIO=4&transport=websocket&sid=X3H2rFVYCvxJMx-vAAAA HTTP/1.1" 200 -
+2025-04-25 15:30:02,423 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-25 15:30:02,437 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.35.47.187:5001
+2025-04-25 15:30:02,437 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-25 15:30:18,014 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:30:18] "GET /socket.io/?EIO=4&transport=polling&t=PPiP0jQ HTTP/1.1" 200 -
+2025-04-25 15:30:18,050 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:30:18] "POST /socket.io/?EIO=4&transport=polling&t=PPiP0j_&sid=CuA92qmDgTWkswK1AAAA HTTP/1.1" 200 -
+2025-04-25 15:30:18,051 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:30:18] "GET /socket.io/?EIO=4&transport=polling&t=PPiP0k0&sid=CuA92qmDgTWkswK1AAAA HTTP/1.1" 200 -
+2025-04-25 15:30:18,584 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:30:18] "GET /socket.io/?EIO=4&transport=polling&t=PPiP0kA&sid=CuA92qmDgTWkswK1AAAA HTTP/1.1" 200 -
+2025-04-25 15:30:53,868 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:30:53] "GET /socket.io/?EIO=4&transport=websocket&sid=CuA92qmDgTWkswK1AAAA HTTP/1.1" 200 -
+2025-04-25 15:30:53,907 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:30:53] "GET /socket.io/?EIO=4&transport=polling&t=PPiP9UF HTTP/1.1" 200 -
+2025-04-25 15:30:53,933 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:30:53] "POST /socket.io/?EIO=4&transport=polling&t=PPiP9UU&sid=STEr7fPQfLXjKf2nAAAC HTTP/1.1" 200 -
+2025-04-25 15:30:53,937 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:30:53] "GET /socket.io/?EIO=4&transport=polling&t=PPiP9UV&sid=STEr7fPQfLXjKf2nAAAC HTTP/1.1" 200 -
+2025-04-25 15:30:53,959 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:30:53] "GET /socket.io/?EIO=4&transport=polling&t=PPiP9V4&sid=STEr7fPQfLXjKf2nAAAC HTTP/1.1" 200 -
+2025-04-25 15:30:53,970 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:30:53] "GET /socket.io/?EIO=4&transport=polling&t=PPiP9VG&sid=STEr7fPQfLXjKf2nAAAC HTTP/1.1" 200 -
+2025-04-25 15:30:59,297 - voice_assistant - INFO - Predicted intent: set_ac_temperature (confidence: 0.07)
+2025-04-25 15:30:59,297 - voice_assistant - WARNING - Low confidence prediction: set_ac_temperature (0.07)
+2025-04-25 15:36:58,656 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:36:58] "GET /socket.io/?EIO=4&transport=websocket&sid=STEr7fPQfLXjKf2nAAAC HTTP/1.1" 200 -
+2025-04-25 15:37:00,055 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:37:00] "GET /socket.io/?EIO=4&transport=polling&t=PPiQYtK HTTP/1.1" 200 -
+2025-04-25 15:37:00,059 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:37:00] "POST /socket.io/?EIO=4&transport=polling&t=PPiQYtP&sid=faiqVBkX3iLTMOCBAAAE HTTP/1.1" 200 -
+2025-04-25 15:37:00,063 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:37:00] "GET /socket.io/?EIO=4&transport=polling&t=PPiQYtQ&sid=faiqVBkX3iLTMOCBAAAE HTTP/1.1" 200 -
+2025-04-25 15:37:45,285 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:37:45] "GET /socket.io/?EIO=4&transport=websocket&sid=faiqVBkX3iLTMOCBAAAE HTTP/1.1" 200 -
+2025-04-25 15:37:47,057 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:37:47] "GET /socket.io/?EIO=4&transport=polling&t=PPiQkLk HTTP/1.1" 200 -
+2025-04-25 15:37:47,062 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:37:47] "POST /socket.io/?EIO=4&transport=polling&t=PPiQkLp&sid=g9x_DMrSA6qGHHhyAAAG HTTP/1.1" 200 -
+2025-04-25 15:37:47,066 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:37:47] "GET /socket.io/?EIO=4&transport=polling&t=PPiQkLq&sid=g9x_DMrSA6qGHHhyAAAG HTTP/1.1" 200 -
+2025-04-25 15:38:34,405 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:38:34] "GET /socket.io/?EIO=4&transport=websocket&sid=g9x_DMrSA6qGHHhyAAAG HTTP/1.1" 200 -
+2025-04-25 15:38:36,053 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:38:36] "GET /socket.io/?EIO=4&transport=polling&t=PPiQwJI HTTP/1.1" 200 -
+2025-04-25 15:38:36,057 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:38:36] "POST /socket.io/?EIO=4&transport=polling&t=PPiQwJN&sid=2CzfaP9DT9FwlJD3AAAI HTTP/1.1" 200 -
+2025-04-25 15:38:36,061 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:38:36] "GET /socket.io/?EIO=4&transport=polling&t=PPiQwJO&sid=2CzfaP9DT9FwlJD3AAAI HTTP/1.1" 200 -
+2025-04-25 15:39:27,148 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:39:27] "GET /socket.io/?EIO=4&transport=websocket&sid=2CzfaP9DT9FwlJD3AAAI HTTP/1.1" 200 -
+2025-04-25 15:39:29,052 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:39:29] "GET /socket.io/?EIO=4&transport=polling&t=PPiR7FQ HTTP/1.1" 200 -
+2025-04-25 15:39:29,059 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:39:29] "POST /socket.io/?EIO=4&transport=polling&t=PPiR7FV&sid=gf0TuGaDpw4SFktFAAAK HTTP/1.1" 200 -
+2025-04-25 15:39:29,062 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:39:29] "GET /socket.io/?EIO=4&transport=polling&t=PPiR7FW&sid=gf0TuGaDpw4SFktFAAAK HTTP/1.1" 200 -
+2025-04-25 15:40:54,311 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:40:54] "GET /socket.io/?EIO=4&transport=websocket&sid=gf0TuGaDpw4SFktFAAAK HTTP/1.1" 200 -
+2025-04-25 15:40:55,328 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:40:55] "GET /socket.io/?EIO=4&transport=polling&t=PPiRSFG HTTP/1.1" 200 -
+2025-04-25 15:40:55,334 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:40:55] "POST /socket.io/?EIO=4&transport=polling&t=PPiRSJZ&sid=rQGYdaW7wOguSpfyAAAM HTTP/1.1" 200 -
+2025-04-25 15:40:55,336 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:40:55] "GET /socket.io/?EIO=4&transport=polling&t=PPiRSJa&sid=rQGYdaW7wOguSpfyAAAM HTTP/1.1" 200 -
+2025-04-25 15:46:41,064 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:46:41] "GET /socket.io/?EIO=4&transport=polling&t=PPiSmjZ HTTP/1.1" 200 -
+2025-04-25 15:46:41,117 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:46:41] "POST /socket.io/?EIO=4&transport=polling&t=PPiSmkH&sid=IH2nfTKJXSth6c0-AAAO HTTP/1.1" 200 -
+2025-04-25 15:46:41,120 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:46:41] "GET /socket.io/?EIO=4&transport=polling&t=PPiSmkI&sid=IH2nfTKJXSth6c0-AAAO HTTP/1.1" 200 -
+2025-04-25 15:46:41,168 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:46:41] "GET /socket.io/?EIO=4&transport=polling&t=PPiSmlD&sid=IH2nfTKJXSth6c0-AAAO HTTP/1.1" 200 -
+2025-04-25 15:46:41,187 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:46:41] "GET /socket.io/?EIO=4&transport=polling&t=PPiSmlW&sid=IH2nfTKJXSth6c0-AAAO HTTP/1.1" 200 -
+2025-04-25 15:47:02,230 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:47:02] "GET /socket.io/?EIO=4&transport=websocket&sid=IH2nfTKJXSth6c0-AAAO HTTP/1.1" 200 -
+2025-04-25 15:47:55,241 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:47:55] "GET /socket.io/?EIO=4&transport=polling&t=PPiT2qc HTTP/1.1" 200 -
+2025-04-25 15:47:55,281 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:47:55] "POST /socket.io/?EIO=4&transport=polling&t=PPiT2r6&sid=UZjyaIpA29JiNnoNAAAQ HTTP/1.1" 200 -
+2025-04-25 15:47:55,283 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:47:55] "GET /socket.io/?EIO=4&transport=polling&t=PPiT2r7&sid=UZjyaIpA29JiNnoNAAAQ HTTP/1.1" 200 -
+2025-04-25 15:47:56,105 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:47:56] "GET /socket.io/?EIO=4&transport=polling&t=PPiT2rq&sid=UZjyaIpA29JiNnoNAAAQ HTTP/1.1" 200 -
+2025-04-25 15:48:45,895 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:48:45] "GET /socket.io/?EIO=4&transport=websocket&sid=UZjyaIpA29JiNnoNAAAQ HTTP/1.1" 200 -
+2025-04-25 15:50:38,343 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-25 15:50:38,358 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.20.10.4:5001
+2025-04-25 15:50:38,358 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-25 15:50:42,061 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:50:42] "GET /socket.io/?EIO=4&transport=polling&t=PPiThZ9 HTTP/1.1" 200 -
+2025-04-25 15:50:42,067 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:50:42] "POST /socket.io/?EIO=4&transport=polling&t=PPiThZG&sid=UMMxA-v1iYwxi7smAAAA HTTP/1.1" 200 -
+2025-04-25 15:50:42,071 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:50:42] "GET /socket.io/?EIO=4&transport=polling&t=PPiThZH&sid=UMMxA-v1iYwxi7smAAAA HTTP/1.1" 200 -
+2025-04-25 15:50:44,610 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:50:44] "GET /socket.io/?EIO=4&transport=websocket&sid=UMMxA-v1iYwxi7smAAAA HTTP/1.1" 200 -
+2025-04-25 15:50:46,015 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:50:46] "GET /socket.io/?EIO=4&transport=polling&t=PPiTiWy HTTP/1.1" 200 -
+2025-04-25 15:50:46,021 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:50:46] "POST /socket.io/?EIO=4&transport=polling&t=PPiTiX2&sid=mPO7nJl6303sbtZOAAAC HTTP/1.1" 200 -
+2025-04-25 15:50:46,024 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:50:46] "GET /socket.io/?EIO=4&transport=polling&t=PPiTiX2.0&sid=mPO7nJl6303sbtZOAAAC HTTP/1.1" 200 -
+2025-04-25 15:50:55,699 - voice_assistant - INFO - Predicted intent: set_ac_temperature (confidence: 0.07)
+2025-04-25 15:50:55,699 - voice_assistant - WARNING - Low confidence prediction: set_ac_temperature (0.07)
+2025-04-25 15:51:20,221 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-25 15:51:20,234 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.20.10.4:5001
+2025-04-25 15:51:20,234 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-25 15:51:24,035 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:51:24] "GET /socket.io/?EIO=4&transport=polling&t=PPiTro_ HTTP/1.1" 200 -
+2025-04-25 15:51:24,040 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:51:24] "POST /socket.io/?EIO=4&transport=polling&t=PPiTrp5&sid=rpjFd2p7QP3cqE9UAAAA HTTP/1.1" 200 -
+2025-04-25 15:51:24,045 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:51:24] "GET /socket.io/?EIO=4&transport=polling&t=PPiTrp6&sid=rpjFd2p7QP3cqE9UAAAA HTTP/1.1" 200 -
+2025-04-25 15:52:08,460 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-25 15:52:08,473 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.20.10.4:5001
+2025-04-25 15:52:08,473 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-25 15:52:08,678 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:52:08] "GET /socket.io/?EIO=4&transport=polling&t=PPiU0ad HTTP/1.1" 200 -
+2025-04-25 15:52:08,683 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:52:08] "POST /socket.io/?EIO=4&transport=polling&t=PPiU0ie&sid=vv-6l_7gKGYEHqK3AAAA HTTP/1.1" 200 -
+2025-04-25 15:52:08,686 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:52:08] "GET /socket.io/?EIO=4&transport=polling&t=PPiU0if&sid=vv-6l_7gKGYEHqK3AAAA HTTP/1.1" 200 -
+2025-04-25 16:09:25,256 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-25 16:09:25,270 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.20.10.4:5001
+2025-04-25 16:09:25,270 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-25 16:09:25,343 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 16:09:25] "GET /socket.io/?EIO=4&transport=polling&t=PPiXzUQ HTTP/1.1" 200 -
+2025-04-25 16:09:25,348 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 16:09:25] "POST /socket.io/?EIO=4&transport=polling&t=PPiXzoX&sid=a5RaQXI9HPCWBaHkAAAA HTTP/1.1" 200 -
+2025-04-25 16:09:25,351 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 16:09:25] "GET /socket.io/?EIO=4&transport=polling&t=PPiXzoY&sid=a5RaQXI9HPCWBaHkAAAA HTTP/1.1" 200 -
+2025-04-25 16:28:32,997 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-25 16:28:33,010 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.20.10.4:5001
+2025-04-25 16:28:33,010 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-25 16:28:35,059 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 16:28:35] "GET /socket.io/?EIO=4&transport=polling&t=PPicMUl HTTP/1.1" 200 -
+2025-04-25 16:28:35,063 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 16:28:35] "POST /socket.io/?EIO=4&transport=polling&t=PPicMUr&sid=EU4LZcyW659Cv9YdAAAA HTTP/1.1" 200 -
+2025-04-25 16:28:35,067 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 16:28:35] "GET /socket.io/?EIO=4&transport=polling&t=PPicMUr.0&sid=EU4LZcyW659Cv9YdAAAA HTTP/1.1" 200 -
+2025-04-25 16:28:45,825 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 16:28:45] "GET /socket.io/?EIO=4&transport=polling&t=PPicP6- HTTP/1.1" 200 -
+2025-04-25 16:28:45,864 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 16:28:45] "POST /socket.io/?EIO=4&transport=polling&t=PPicP7c&sid=VRTbNTf8VQgiGEHbAAAC HTTP/1.1" 200 -
+2025-04-25 16:28:45,866 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 16:28:45] "GET /socket.io/?EIO=4&transport=polling&t=PPicP7d&sid=VRTbNTf8VQgiGEHbAAAC HTTP/1.1" 200 -
+2025-04-25 16:28:46,022 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 16:28:46] "GET /socket.io/?EIO=4&transport=polling&t=PPicP7j&sid=VRTbNTf8VQgiGEHbAAAC HTTP/1.1" 200 -
+2025-04-25 16:29:24,502 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 16:29:24] "GET /socket.io/?EIO=4&transport=websocket&sid=VRTbNTf8VQgiGEHbAAAC HTTP/1.1" 200 -
+2025-04-25 16:29:24,539 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 16:29:24] "GET /socket.io/?EIO=4&transport=polling&t=PPicYZu HTTP/1.1" 200 -
+2025-04-25 16:29:24,564 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 16:29:24] "POST /socket.io/?EIO=4&transport=polling&t=PPicYa7&sid=hCzjjp0MoUz6IMDKAAAE HTTP/1.1" 200 -
+2025-04-25 16:29:24,567 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 16:29:24] "GET /socket.io/?EIO=4&transport=polling&t=PPicYa8&sid=hCzjjp0MoUz6IMDKAAAE HTTP/1.1" 200 -
+2025-04-25 16:29:24,597 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 16:29:24] "GET /socket.io/?EIO=4&transport=polling&t=PPicYao&sid=hCzjjp0MoUz6IMDKAAAE HTTP/1.1" 200 -
+2025-04-25 16:29:24,609 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 16:29:24] "GET /socket.io/?EIO=4&transport=polling&t=PPicYa_&sid=hCzjjp0MoUz6IMDKAAAE HTTP/1.1" 200 -
+2025-04-25 17:01:29,777 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-25 17:01:29,791 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.20.10.4:5001
+2025-04-25 17:01:29,791 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-25 17:01:31,049 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 17:01:31] "GET /socket.io/?EIO=4&transport=polling&t=PPijuva HTTP/1.1" 200 -
+2025-04-25 17:01:31,056 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 17:01:31] "POST /socket.io/?EIO=4&transport=polling&t=PPijuvi&sid=m2fJqGdet5_v8qqlAAAA HTTP/1.1" 200 -
+2025-04-25 17:01:31,059 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 17:01:31] "GET /socket.io/?EIO=4&transport=polling&t=PPijuvj&sid=m2fJqGdet5_v8qqlAAAA HTTP/1.1" 200 -
+2025-04-25 17:01:49,379 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 17:01:49] "GET /socket.io/?EIO=4&transport=websocket&sid=m2fJqGdet5_v8qqlAAAA HTTP/1.1" 200 -
+2025-04-25 17:01:49,788 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 17:01:49] "GET /socket.io/?EIO=4&transport=polling&t=PPijzUP HTTP/1.1" 200 -
+2025-04-25 17:01:49,793 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 17:01:49] "POST /socket.io/?EIO=4&transport=polling&t=PPijzUU&sid=afOgSzHaPnpfp-guAAAC HTTP/1.1" 200 -
+2025-04-25 17:01:49,796 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 17:01:49] "GET /socket.io/?EIO=4&transport=polling&t=PPijzUV&sid=afOgSzHaPnpfp-guAAAC HTTP/1.1" 200 -
+2025-04-25 17:01:59,808 - voice_assistant - INFO - Predicted intent: set_ac_temperature (confidence: 0.07)
+2025-04-25 17:01:59,808 - voice_assistant - WARNING - Low confidence prediction: set_ac_temperature (0.07)
+2025-04-25 17:02:06,105 - voice_assistant - INFO - Predicted intent: turn_off_fan (confidence: 0.58)
+2025-04-25 17:02:13,408 - voice_assistant - INFO - Predicted intent: turn_off_fan (confidence: 0.58)
+2025-04-25 17:02:19,665 - voice_assistant - INFO - Predicted intent: play_music (confidence: 0.97)
+2025-04-25 17:02:19,666 - voice_assistant - WARNING - No song name extracted from: play music
+2025-04-25 17:02:45,501 - voice_assistant - INFO - Predicted intent: play_music (confidence: 0.97)
+2025-04-25 17:02:45,501 - voice_assistant - WARNING - No song name extracted from: play music
+2025-04-25 17:02:58,848 - voice_assistant - INFO - Predicted intent: turn_on_light (confidence: 0.20)
+2025-04-25 17:02:58,848 - voice_assistant - WARNING - Low confidence prediction: turn_on_light (0.20)
+2025-04-25 17:03:05,261 - voice_assistant - INFO - Predicted intent: turn_on_light (confidence: 0.20)
+2025-04-25 17:03:05,262 - voice_assistant - WARNING - Low confidence prediction: turn_on_light (0.20)
+2025-04-25 17:03:18,687 - voice_assistant - INFO - Predicted intent: turn_off_fan (confidence: 0.58)
+2025-04-25 17:03:26,800 - voice_assistant - INFO - Predicted intent: lock_front_door (confidence: 0.98)
+2025-04-25 17:03:34,367 - voice_assistant - INFO - Predicted intent: unlock_front_door (confidence: 0.99)
+2025-04-25 17:03:40,936 - voice_assistant - INFO - Predicted intent: set_ac_temperature (confidence: 0.93)
+2025-04-25 17:03:47,882 - voice_assistant - INFO - Predicted intent: set_ac_temperature (confidence: 0.97)
+2025-04-25 17:03:57,731 - voice_assistant - INFO - Predicted intent: turn_on_light (confidence: 0.56)
+2025-04-25 17:13:25,128 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 17:13:25] "GET /socket.io/?EIO=4&transport=websocket&sid=afOgSzHaPnpfp-guAAAC HTTP/1.1" 200 -
+2025-04-26 00:07:58,933 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-26 00:07:58,948 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.44:5001
+2025-04-26 00:07:58,948 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-26 00:08:21,268 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:08:21] "GET /socket.io/?EIO=4&transport=polling&t=PPkFbPE HTTP/1.1" 200 -
+2025-04-26 00:08:21,307 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:08:21] "POST /socket.io/?EIO=4&transport=polling&t=PPkFbPv&sid=UJK1goLXmBIXSOW4AAAA HTTP/1.1" 200 -
+2025-04-26 00:08:21,319 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:08:21] "GET /socket.io/?EIO=4&transport=polling&t=PPkFbQ4&sid=UJK1goLXmBIXSOW4AAAA HTTP/1.1" 200 -
+2025-04-26 00:08:22,407 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:08:22] "GET /socket.io/?EIO=4&transport=polling&t=PPkFbQC&sid=UJK1goLXmBIXSOW4AAAA HTTP/1.1" 200 -
+2025-04-26 00:08:55,096 - voice_assistant - WARNING - Google Cloud STT failed, falling back: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-04-26 00:08:55,929 - voice_assistant - INFO - Predicted intent: exit (confidence: 0.32)
+2025-04-26 00:08:55,929 - voice_assistant - WARNING - Low confidence prediction: exit (0.32)
+2025-04-26 00:09:05,400 - voice_assistant - WARNING - Google Cloud STT failed, falling back: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-04-26 00:09:05,933 - voice_assistant - INFO - Predicted intent: stop_music (confidence: 0.57)
+2025-04-26 00:09:24,012 - voice_assistant - WARNING - Google Cloud STT failed, falling back: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-04-26 00:09:25,433 - voice_assistant - INFO - Predicted intent: play_music (confidence: 0.75)
+2025-04-26 00:09:25,434 - voice_assistant - INFO - Extracted song_name: star for
+2025-04-26 00:09:37,264 - voice_assistant - WARNING - Google Cloud STT failed, falling back: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-04-26 00:09:38,022 - voice_assistant - INFO - Predicted intent: play_music (confidence: 0.75)
+2025-04-26 00:09:38,022 - voice_assistant - INFO - Extracted song_name: starboy
+2025-04-26 00:09:44,689 - voice_assistant - WARNING - Google Cloud STT failed, falling back: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-04-26 00:21:06,506 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-26 00:21:06,519 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.44:5001
+2025-04-26 00:21:06,519 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-26 00:21:10,564 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:21:10] "GET /socket.io/?EIO=4&transport=polling&t=PPkIXDM HTTP/1.1" 200 -
+2025-04-26 00:21:10,588 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:21:10] "POST /socket.io/?EIO=4&transport=polling&t=PPkIXDv&sid=v4a2DCofrTVevqRPAAAA HTTP/1.1" 200 -
+2025-04-26 00:21:10,592 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:21:10] "GET /socket.io/?EIO=4&transport=polling&t=PPkIXDv.0&sid=v4a2DCofrTVevqRPAAAA HTTP/1.1" 200 -
+2025-04-26 00:21:10,630 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:21:10] "GET /socket.io/?EIO=4&transport=polling&t=PPkIXEa&sid=v4a2DCofrTVevqRPAAAA HTTP/1.1" 200 -
+2025-04-26 00:21:10,685 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:21:10] "GET /socket.io/?EIO=4&transport=polling&t=PPkIXFQ&sid=v4a2DCofrTVevqRPAAAA HTTP/1.1" 200 -
+2025-04-26 00:21:12,058 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:21:12] "GET /socket.io/?EIO=4&transport=websocket&sid=v4a2DCofrTVevqRPAAAA HTTP/1.1" 200 -
+2025-04-26 00:21:12,105 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:21:12] "GET /socket.io/?EIO=4&transport=polling&t=PPkIXbc HTTP/1.1" 200 -
+2025-04-26 00:21:12,134 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:21:12] "POST /socket.io/?EIO=4&transport=polling&t=PPkIXbr&sid=_tDX6O8FEd2jHK6HAAAC HTTP/1.1" 200 -
+2025-04-26 00:21:12,139 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:21:12] "GET /socket.io/?EIO=4&transport=polling&t=PPkIXbs&sid=_tDX6O8FEd2jHK6HAAAC HTTP/1.1" 200 -
+2025-04-26 00:21:12,170 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:21:12] "GET /socket.io/?EIO=4&transport=polling&t=PPkIXcb&sid=_tDX6O8FEd2jHK6HAAAC HTTP/1.1" 200 -
+2025-04-26 00:23:21,698 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-26 00:23:21,713 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.44:5001
+2025-04-26 00:23:21,713 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-26 00:23:23,078 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:23:23] "GET /socket.io/?EIO=4&transport=polling&t=PPkJ1a0 HTTP/1.1" 200 -
+2025-04-26 00:23:23,086 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:23:23] "POST /socket.io/?EIO=4&transport=polling&t=PPkJ1a9&sid=AAEvF3JqnHk8lT2CAAAA HTTP/1.1" 200 -
+2025-04-26 00:23:23,090 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:23:23] "GET /socket.io/?EIO=4&transport=polling&t=PPkJ1aA&sid=AAEvF3JqnHk8lT2CAAAA HTTP/1.1" 200 -
+2025-04-26 00:23:26,244 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:23:26] "GET /socket.io/?EIO=4&transport=websocket&sid=AAEvF3JqnHk8lT2CAAAA HTTP/1.1" 200 -
+2025-04-26 00:23:26,283 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:23:26] "GET /socket.io/?EIO=4&transport=polling&t=PPkJ2M7 HTTP/1.1" 200 -
+2025-04-26 00:23:26,308 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:23:26] "POST /socket.io/?EIO=4&transport=polling&t=PPkJ2ML&sid=j8gRxFk7BXjw-UrXAAAC HTTP/1.1" 200 -
+2025-04-26 00:23:26,312 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:23:26] "GET /socket.io/?EIO=4&transport=polling&t=PPkJ2ML.0&sid=j8gRxFk7BXjw-UrXAAAC HTTP/1.1" 200 -
+2025-04-26 00:23:26,338 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:23:26] "GET /socket.io/?EIO=4&transport=polling&t=PPkJ2M_&sid=j8gRxFk7BXjw-UrXAAAC HTTP/1.1" 200 -
+2025-04-26 00:23:26,350 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:23:26] "GET /socket.io/?EIO=4&transport=polling&t=PPkJ2NC&sid=j8gRxFk7BXjw-UrXAAAC HTTP/1.1" 200 -
+2025-04-26 00:23:27,133 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:23:27] "GET /socket.io/?EIO=4&transport=websocket&sid=j8gRxFk7BXjw-UrXAAAC HTTP/1.1" 200 -
+2025-04-26 00:23:27,169 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:23:27] "GET /socket.io/?EIO=4&transport=polling&t=PPkJ2Z- HTTP/1.1" 200 -
+2025-04-26 00:23:27,194 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:23:27] "POST /socket.io/?EIO=4&transport=polling&t=PPkJ2aB&sid=ZvECyngnIlToYOAkAAAE HTTP/1.1" 200 -
+2025-04-26 00:23:27,198 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:23:27] "GET /socket.io/?EIO=4&transport=polling&t=PPkJ2aC&sid=ZvECyngnIlToYOAkAAAE HTTP/1.1" 200 -
+2025-04-26 00:23:27,219 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:23:27] "GET /socket.io/?EIO=4&transport=polling&t=PPkJ2am&sid=ZvECyngnIlToYOAkAAAE HTTP/1.1" 200 -
+2025-04-26 00:23:27,231 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:23:27] "GET /socket.io/?EIO=4&transport=polling&t=PPkJ2ay&sid=ZvECyngnIlToYOAkAAAE HTTP/1.1" 200 -
+2025-04-26 00:23:44,680 - voice_assistant - WARNING - Google Cloud STT failed, falling back: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-04-26 00:23:48,773 - voice_assistant - INFO - Predicted intent: play_music (confidence: 0.75)
+2025-04-26 00:23:48,773 - voice_assistant - WARNING - No song name extracted from: play the song
+2025-04-26 00:23:56,113 - voice_assistant - WARNING - Google Cloud STT failed, falling back: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-04-26 00:35:22,550 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-26 00:35:22,564 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.44:5001
+2025-04-26 00:35:22,564 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-26 00:35:23,072 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:35:23] "GET /socket.io/?EIO=4&transport=polling&t=PPkLnLy HTTP/1.1" 200 -
+2025-04-26 00:35:23,081 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:35:23] "POST /socket.io/?EIO=4&transport=polling&t=PPkLnM4&sid=zBPWWhbFj2FcGHiIAAAA HTTP/1.1" 200 -
+2025-04-26 00:35:23,085 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:35:23] "GET /socket.io/?EIO=4&transport=polling&t=PPkLnM5&sid=zBPWWhbFj2FcGHiIAAAA HTTP/1.1" 200 -
+2025-04-26 00:35:29,783 - voice_assistant - WARNING - Google Cloud STT failed, falling back: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-04-26 00:35:39,723 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:35:39] "GET /socket.io/?EIO=4&transport=websocket&sid=zBPWWhbFj2FcGHiIAAAA HTTP/1.1" 200 -
+2025-04-26 00:35:39,763 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:35:39] "GET /socket.io/?EIO=4&transport=polling&t=PPkLrQm HTTP/1.1" 200 -
+2025-04-26 00:35:39,789 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:35:39] "POST /socket.io/?EIO=4&transport=polling&t=PPkLrQ-&sid=8hBAKEFRw88GI-F4AAAC HTTP/1.1" 200 -
+2025-04-26 00:35:39,792 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:35:39] "GET /socket.io/?EIO=4&transport=polling&t=PPkLrR0&sid=8hBAKEFRw88GI-F4AAAC HTTP/1.1" 200 -
+2025-04-26 00:35:39,819 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:35:39] "GET /socket.io/?EIO=4&transport=polling&t=PPkLrRe&sid=8hBAKEFRw88GI-F4AAAC HTTP/1.1" 200 -
+2025-04-26 00:35:39,831 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:35:39] "GET /socket.io/?EIO=4&transport=polling&t=PPkLrRq&sid=8hBAKEFRw88GI-F4AAAC HTTP/1.1" 200 -
+2025-04-26 00:35:41,669 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:35:41] "GET /socket.io/?EIO=4&transport=websocket&sid=8hBAKEFRw88GI-F4AAAC HTTP/1.1" 200 -
+2025-04-26 00:35:41,707 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:35:41] "GET /socket.io/?EIO=4&transport=polling&t=PPkLrv7 HTTP/1.1" 200 -
+2025-04-26 00:35:41,734 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:35:41] "POST /socket.io/?EIO=4&transport=polling&t=PPkLrvO&sid=rhlslz3Rtc82dDy1AAAE HTTP/1.1" 200 -
+2025-04-26 00:35:41,738 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:35:41] "GET /socket.io/?EIO=4&transport=polling&t=PPkLrvP&sid=rhlslz3Rtc82dDy1AAAE HTTP/1.1" 200 -
+2025-04-26 00:35:41,765 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:35:41] "GET /socket.io/?EIO=4&transport=polling&t=PPkLrw3&sid=rhlslz3Rtc82dDy1AAAE HTTP/1.1" 200 -
+2025-04-26 00:35:41,778 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:35:41] "GET /socket.io/?EIO=4&transport=polling&t=PPkLrwG&sid=rhlslz3Rtc82dDy1AAAE HTTP/1.1" 200 -
+2025-04-26 00:35:41,857 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:35:41] "GET /socket.io/?EIO=4&transport=websocket&sid=rhlslz3Rtc82dDy1AAAE HTTP/1.1" 200 -
+2025-04-26 00:35:41,896 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:35:41] "GET /socket.io/?EIO=4&transport=polling&t=PPkLry2 HTTP/1.1" 200 -
+2025-04-26 00:35:41,926 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:35:41] "POST /socket.io/?EIO=4&transport=polling&t=PPkLryQ&sid=nzphoDoOIvVeYSRhAAAG HTTP/1.1" 200 -
+2025-04-26 00:35:41,931 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:35:41] "GET /socket.io/?EIO=4&transport=polling&t=PPkLryR&sid=nzphoDoOIvVeYSRhAAAG HTTP/1.1" 200 -
+2025-04-26 00:35:41,947 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:35:41] "GET /socket.io/?EIO=4&transport=polling&t=PPkLryv&sid=nzphoDoOIvVeYSRhAAAG HTTP/1.1" 200 -
+2025-04-26 00:35:41,960 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:35:41] "GET /socket.io/?EIO=4&transport=polling&t=PPkLrz6&sid=nzphoDoOIvVeYSRhAAAG HTTP/1.1" 200 -
+2025-04-26 00:35:43,431 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:35:43] "GET /socket.io/?EIO=4&transport=websocket&sid=nzphoDoOIvVeYSRhAAAG HTTP/1.1" 200 -
+2025-04-26 00:35:43,559 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:35:43] "GET /socket.io/?EIO=4&transport=polling&t=PPkLsM4 HTTP/1.1" 200 -
+2025-04-26 00:35:43,565 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:35:43] "POST /socket.io/?EIO=4&transport=polling&t=PPkLsMB&sid=-pw8AigkVv593YhTAAAI HTTP/1.1" 200 -
+2025-04-26 00:35:43,569 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:35:43] "GET /socket.io/?EIO=4&transport=polling&t=PPkLsMC&sid=-pw8AigkVv593YhTAAAI HTTP/1.1" 200 -
+2025-04-26 00:35:52,804 - voice_assistant - INFO - Model and vectorizer loaded successfully
+2025-04-26 00:35:52,818 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.44:5001
+2025-04-26 00:35:52,818 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-26 00:35:52,923 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:35:52] "GET /socket.io/?EIO=4&transport=polling&t=PPkLuGJ HTTP/1.1" 200 -
+2025-04-26 00:35:52,932 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:35:52] "POST /socket.io/?EIO=4&transport=polling&t=PPkLueU&sid=xiVpMbhw2kNezhu-AAAA HTTP/1.1" 200 -
+2025-04-26 00:35:52,934 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 00:35:52] "GET /socket.io/?EIO=4&transport=polling&t=PPkLueU.0&sid=xiVpMbhw2kNezhu-AAAA HTTP/1.1" 200 -
+2025-04-26 00:36:01,806 - voice_assistant - WARNING - Google Cloud STT failed, falling back: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-04-26 00:36:03,270 - voice_assistant - INFO - Predicted intent: turn_on_light (confidence: 0.20)
+2025-04-26 00:36:03,270 - voice_assistant - WARNING - Low confidence prediction: turn_on_light (0.20)
+2025-04-26 00:36:15,274 - voice_assistant - WARNING - Google Cloud STT failed, falling back: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-04-26 00:36:16,284 - voice_assistant - INFO - Predicted intent: turn_off_fan (confidence: 0.58)
+2025-04-26 00:36:35,336 - voice_assistant - WARNING - Google Cloud STT failed, falling back: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-04-26 00:36:36,467 - voice_assistant - INFO - Predicted intent: turn_on_light (confidence: 0.56)
+2025-04-26 00:39:05,518 - voice_assistant - WARNING - Google Cloud STT failed, falling back: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-04-26 00:39:06,304 - voice_assistant - INFO - Predicted intent: play_music (confidence: 0.75)
+2025-04-26 00:39:06,304 - voice_assistant - WARNING - No song name extracted from: play the song
+2025-04-26 00:39:19,013 - voice_assistant - WARNING - Google Cloud STT failed, falling back: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-04-26 00:39:19,849 - voice_assistant - INFO - Predicted intent: play_music (confidence: 0.75)
+2025-04-26 00:39:19,849 - voice_assistant - INFO - Extracted song_name: sunflower
+2025-04-26 00:39:46,887 - voice_assistant - WARNING - Google Cloud STT failed, falling back: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-04-26 00:39:48,207 - voice_assistant - INFO - Predicted intent: set_ac_temperature (confidence: 0.07)
+2025-04-26 00:39:48,207 - voice_assistant - WARNING - Low confidence prediction: set_ac_temperature (0.07)
+2025-04-26 00:40:41,819 - voice_assistant - WARNING - Google Cloud STT failed, falling back: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-04-26 00:40:42,928 - voice_assistant - INFO - Predicted intent: turn_off_fan (confidence: 0.49)
+2025-04-26 00:40:53,847 - voice_assistant - WARNING - Google Cloud STT failed, falling back: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-04-26 00:40:55,141 - voice_assistant - INFO - Predicted intent: turn_on_light (confidence: 0.28)
+2025-04-26 00:40:55,141 - voice_assistant - WARNING - Low confidence prediction: turn_on_light (0.28)
+2025-04-26 00:41:04,363 - voice_assistant - WARNING - Google Cloud STT failed, falling back: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-04-26 00:41:05,551 - voice_assistant - INFO - Predicted intent: turn_on_light (confidence: 0.20)
+2025-04-26 00:41:05,551 - voice_assistant - WARNING - Low confidence prediction: turn_on_light (0.20)
+2025-04-26 00:41:16,384 - voice_assistant - WARNING - Google Cloud STT failed, falling back: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-04-26 00:41:17,593 - voice_assistant - INFO - Predicted intent: activate_movie_mode (confidence: 0.40)
+2025-04-26 00:41:36,543 - voice_assistant - WARNING - Google Cloud STT failed, falling back: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-04-26 00:41:37,691 - voice_assistant - INFO - Predicted intent: unlock_front_door (confidence: 0.86)
+2025-04-26 00:43:28,567 - voice_assistant - WARNING - Google Cloud STT failed, falling back: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-04-26 00:43:29,824 - voice_assistant - INFO - Predicted intent: stop_music (confidence: 0.61)

@@ -220,5 +220,131 @@
         "predicted_intent": "play_music",
         "status": "success",
         "timestamp": "2025-04-18 15:21:04"
+    },
+    {
+        "command": "turn_off_fan",
+        "predicted_intent": "turn_off_fan",
+        "status": "success",
+        "timestamp": "2025-04-25 17:02:06"
+    },
+    {
+        "command": "turn_off_fan",
+        "predicted_intent": "turn_off_fan",
+        "status": "success",
+        "timestamp": "2025-04-25 17:02:13"
+    },
+    {
+        "command": "play_music",
+        "predicted_intent": "play_music",
+        "status": "failed",
+        "timestamp": "2025-04-25 17:02:20"
+    },
+    {
+        "command": "play_music",
+        "predicted_intent": "play_music",
+        "status": "success",
+        "timestamp": "2025-04-25 17:02:45"
+    },
+    {
+        "command": "turn_off_fan",
+        "predicted_intent": "turn_off_fan",
+        "status": "success",
+        "timestamp": "2025-04-25 17:03:18"
+    },
+    {
+        "command": "lock_front_door",
+        "predicted_intent": "lock_front_door",
+        "status": "success",
+        "timestamp": "2025-04-25 17:03:26"
+    },
+    {
+        "command": "unlock_front_door",
+        "predicted_intent": "unlock_front_door",
+        "status": "success",
+        "timestamp": "2025-04-25 17:03:34"
+    },
+    {
+        "command": "set_ac_temperature",
+        "predicted_intent": "set_ac_temperature",
+        "status": "success",
+        "timestamp": "2025-04-25 17:03:47"
+    },
+    {
+        "command": "turn_on_light",
+        "predicted_intent": "turn_on_light",
+        "status": "success",
+        "timestamp": "2025-04-25 17:03:57"
+    },
+    {
+        "command": "stop_music",
+        "predicted_intent": "stop_music",
+        "status": "success",
+        "timestamp": "2025-04-26 00:09:06"
+    },
+    {
+        "command": "play_music",
+        "predicted_intent": "play_music",
+        "status": "success",
+        "timestamp": "2025-04-26 00:09:26"
+    },
+    {
+        "command": "play_music",
+        "predicted_intent": "play_music",
+        "status": "success",
+        "timestamp": "2025-04-26 00:09:38"
+    },
+    {
+        "command": "play_music",
+        "predicted_intent": "play_music",
+        "status": "success",
+        "timestamp": "2025-04-26 00:23:48"
+    },
+    {
+        "command": "turn_off_fan",
+        "predicted_intent": "turn_off_fan",
+        "status": "success",
+        "timestamp": "2025-04-26 00:36:16"
+    },
+    {
+        "command": "turn_on_light",
+        "predicted_intent": "turn_on_light",
+        "status": "success",
+        "timestamp": "2025-04-26 00:36:36"
+    },
+    {
+        "command": "play_music",
+        "predicted_intent": "play_music",
+        "status": "success",
+        "timestamp": "2025-04-26 00:39:06"
+    },
+    {
+        "command": "play_music",
+        "predicted_intent": "play_music",
+        "status": "success",
+        "timestamp": "2025-04-26 00:39:20"
+    },
+    {
+        "command": "turn_off_fan",
+        "predicted_intent": "turn_off_fan",
+        "status": "success",
+        "timestamp": "2025-04-26 00:40:42"
+    },
+    {
+        "command": "activate_movie_mode",
+        "predicted_intent": "activate_movie_mode",
+        "status": "success",
+        "timestamp": "2025-04-26 00:41:17"
+    },
+    {
+        "command": "unlock_front_door",
+        "predicted_intent": "unlock_front_door",
+        "status": "success",
+        "timestamp": "2025-04-26 00:41:37"
+    },
+    {
+        "command": "stop_music",
+        "predicted_intent": "stop_music",
+        "status": "success",
+        "timestamp": "2025-04-26 00:43:30"
     }
 ]

@@ -246,6 +246,127 @@
         .voice-assistant.listening {
             animation: pulse 1.5s infinite;
         }
+                .chat-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 350px;
+            height: 450px;
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            z-index: 1000;
+            transform: translateX(380px);
+            transition: transform 0.3s ease;
+        }
+        .chat-container.show {
+            transform: translateX(0);
+        }
+        .chat-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: var(--primary-color);
+            color: white;
+        }
+        .chat-toggle {
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+            padding: 5px 10px;
+        }
+        .chat-messages {
+            flex-grow: 1;
+            padding: 15px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .chat-message {
+            max-width: 80%;
+            padding: 10px 15px;
+            border-radius: 18px;
+            word-break: break-word;
+        }
+        .chat-message.user {
+            align-self: flex-end;
+            background-color: var(--primary-color);
+            color: white;
+        }
+        .chat-message.bot {
+            align-self: flex-start;
+            background-color: #f1f1f1;
+            color: var(--text-color);
+        }
+        .chat-input {
+            display: flex;
+            padding: 10px;
+            border-top: 1px solid #e1e1e1;
+        }
+        .chat-input input {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: var(--border-radius);
+            margin-right: 10px;
+        }
+        .music-search {
+    display: flex;
+    margin-bottom: 10px;
+    gap: 5px;
+}
+.music-search input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+}
+.song-results {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    display: none;
+}
+.song-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    border-bottom: 1px solid #f1f1f1;
+    cursor: pointer;
+}
+.song-item:hover {
+    background-color: #f9f9f9;
+}
+.song-item img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.song-info {
+    flex-grow: 1;
+}
+.song-title {
+    font-weight: bold;
+}
+.song-artist {
+    font-size: 12px;
+    color: #666;
+}
+.now-playing {
+    margin-top: 10px;
+    padding: 8px;
+    background-color: #f9f9f9;
+    border-radius: var(--border-radius);
+    font-size: 12px;
+    display: none;
+}
         @keyframes pulse {
             0% { box-shadow: 0 0 0 0 rgba(52, 152, 219, 0.7); }
             70% { box-shadow: 0 0 0 15px rgba(52, 152, 219, 0); }
@@ -295,7 +416,7 @@
                         <button class="btn btn-outline" onclick="sendCommand('turn_off_fan')"><i class="fas fa-power-off"></i> Turn Off</button>
                     </div>
                 </div>
-                <div class="device-card">
+                <!-- <div class="device-card">
                     <div class="device-header">
                         <h3>Music: <span id="music-state">stopped</span></h3>
                         <div class="device-icon"><i class="fas fa-music"></i></div>
@@ -304,6 +425,22 @@
                         <button class="btn btn-primary" onclick="sendCommand('play_music')"><i class="fas fa-play"></i> Play</button>
                         <button class="btn btn-outline" onclick="sendCommand('stop_music')"><i class="fas fa-stop"></i> Stop</button>
                     </div>
+                </div> -->
+                <div class="device-card">
+                    <div class="device-header">
+                        <h3>Music: <span id="music-state">stopped</span></h3>
+                        <div class="device-icon"><i class="fas fa-music"></i></div>
+                    </div>
+                    <div class="music-search">
+                        <input type="text" id="song-search" placeholder="Search for a song...">
+                        <button class="btn btn-primary" onclick="searchSongs()"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="song-results" id="song-results"></div>
+                    <div class="device-controls">
+                        <button class="btn btn-primary" onclick="toggleMusicPlayer()"><i class="fas fa-list"></i> Song List</button>
+                        <button class="btn btn-outline" onclick="sendCommand('stop_music')"><i class="fas fa-stop"></i> Stop</button>
+                    </div>
+                    <div class="now-playing" id="now-playing"></div>
                 </div>
                 <div class="device-card">
                     <div class="device-header">
@@ -332,6 +469,25 @@
                     <button class="btn btn-outline" onclick="refreshLogs()"><i class="fas fa-sync"></i> Refresh</button>
                 </div>
                 <div class="logs-container" id="logs-container"></div>
+            </div>
+            <div class="chat-container" id="chat-container">
+                <div class="chat-header">
+                    <h3>Smart Home Assistant</h3>
+                    <button class="btn btn-outline chat-toggle" id="chat-toggle">
+                        <i class="fas fa-comments"></i>
+                    </button>
+                </div>
+                <div class="chat-messages" id="chat-messages">
+                    <div class="chat-message bot">
+                        <div class="message-content">Hello! How can I assist you with your smart home today?</div>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="chat-input-field" placeholder="Type your message...">
+                    <button class="btn btn-primary" id="chat-send-btn">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
             </div>
         </main>
         <footer>
@@ -457,7 +613,61 @@
                 socket.emit('listen_now');
             }
         });
+            function searchSongs() {
+        const query = document.getElementById('song-search').value.trim();
+        if (!query) return;
         
+        fetch('/search_songs', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({query: query})
+        })
+        .then(response => response.json())
+        .then(data => {
+            const resultsContainer = document.getElementById('song-results');
+            resultsContainer.style.display = 'block';
+            resultsContainer.innerHTML = '';
+            
+            if (data.status === 'success' && data.songs.length > 0) {
+                data.songs.forEach(song => {
+                    const songItem = document.createElement('div');
+                    songItem.className = 'song-item';
+                    songItem.innerHTML = `
+                        <img src="${song.image || '/api/placeholder/40/40'}" alt="Album art">
+                        <div class="song-info">
+                            <div class="song-title">${song.name}</div>
+                            <div class="song-artist">${song.artist}</div>
+                        </div>
+                    `;
+                    songItem.onclick = function() {
+                        sendCommand('play_music', {song_name: song.name});
+                        document.getElementById('now-playing').style.display = 'block';
+                        document.getElementById('now-playing').innerHTML = `
+                            <strong>Now Playing:</strong> ${song.name} by ${song.artist}
+                        `;
+                        resultsContainer.style.display = 'none';
+                    };
+                    resultsContainer.appendChild(songItem);
+                });
+            } else {
+                resultsContainer.innerHTML = '<div class="no-results">No songs found</div>';
+            }
+        })
+        .catch(() => {
+            document.getElementById('song-results').innerHTML = 
+                '<div class="no-results">Error searching for songs</div>';
+        });
+    }
+
+    function toggleMusicPlayer() {
+        const resultsContainer = document.getElementById('song-results');
+        resultsContainer.style.display = resultsContainer.style.display === 'none' ? 'block' : 'none';
+    }
+
+    // Add event listener for song search input
+    document.getElementById('song-search').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') searchSongs();
+    });
         // Add this to your voice-assistant div in index.html
         document.getElementById('voice-assistant').addEventListener('dblclick', function() {
             const command = prompt("Enter your command:");
@@ -485,6 +695,76 @@
 
         socket.on('connect', () => console.log('Connected to SocketIO server'));
         socket.on('disconnect', () => showToast('Voice assistant disconnected', 'error'));
+                // Chat functionality
+        document.getElementById('chat-toggle').addEventListener('click', function() {
+            document.getElementById('chat-container').classList.toggle('show');
+        });
+
+        document.getElementById('chat-send-btn').addEventListener('click', sendChatMessage);
+        document.getElementById('chat-input-field').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') sendChatMessage();
+        });
+
+        function sendChatMessage() {
+            const inputField = document.getElementById('chat-input-field');
+            const message = inputField.value.trim();
+            if (!message) return;
+            
+            // Add user message to chat
+            addMessageToChat(message, 'user');
+            inputField.value = '';
+            
+            // Send to backend
+            fetch('/chat', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({message: message})
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    addMessageToChat(data.message, 'bot');
+                } else {
+                    addMessageToChat("Sorry, I couldn't process your request. Please try again.", 'bot');
+                }
+            })
+            .catch(() => {
+                addMessageToChat("Sorry, I'm having trouble connecting to the server.", 'bot');
+            });
+        }
+
+        function addMessageToChat(message, type) {
+            const chatMessages = document.getElementById('chat-messages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `chat-message ${type}`;
+            messageDiv.innerHTML = `<div class="message-content">${message}</div>`;
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        // Show chat button
+        const chatButton = document.createElement('div');
+        chatButton.className = 'chat-button';
+        chatButton.innerHTML = '<i class="fas fa-comments"></i>';
+        chatButton.style.position = 'fixed';
+        chatButton.style.right = '20px';
+        chatButton.style.bottom = '90px';
+        chatButton.style.width = '60px';
+        chatButton.style.height = '60px';
+        chatButton.style.borderRadius = '50%';
+        chatButton.style.backgroundColor = '#e74c3c';
+        chatButton.style.color = 'white';
+        chatButton.style.display = 'flex';
+        chatButton.style.justifyContent = 'center';
+        chatButton.style.alignItems = 'center';
+        chatButton.style.fontSize = '24px';
+        chatButton.style.cursor = 'pointer';
+        chatButton.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+        chatButton.style.zIndex = '1000';
+        chatButton.addEventListener('click', function() {
+            document.getElementById('chat-container').classList.toggle('show');
+        });
+        document.body.appendChild(chatButton);
     </script>
 </body>
 </html>

@@ -5,7 +5,10 @@ from datetime import datetime
 import logging
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
-
+import re
+# Add these imports at the top with other imports
+import google.generativeai as genai
+from google.api_core.exceptions import InvalidArgument
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
@@ -15,7 +18,18 @@ logging.basicConfig(
 logger = logging.getLogger('app')
 
 app = Flask(__name__)
-
+# Gemini API Setup
+GEMINI_API_KEY = "AIzaSyD5PIh6RitbxcosCNrMa7jGTlLAK6aAtfk"  # Replace with your actual API key
+genai.configure(api_key=GEMINI_API_KEY)
+model = genai.GenerativeModel(
+    model_name="models/gemini-1.5-pro-latest",  # ✅ updated model name
+    generation_config={
+        "temperature": 0.7,
+        "top_p": 1,
+        "top_k": 1,
+        "max_output_tokens": 1024,
+    },
+)
 # Path to the log file
 LOG_FILE = "device_logs.json"
 
@@ -29,8 +43,8 @@ DEVICE_STATE = {
 }
 
 # Spotify setup
-SPOTIFY_CLIENT_ID = "b6e627d8f4224a968b66b3e6c8c65da9"  # Replace with your Client ID
-SPOTIFY_CLIENT_SECRET = "fe23d961597c44249dfd675046319f5e"  # Replace with your Client Secret
+SPOTIFY_CLIENT_ID = "b6e627d8f4224a968b66b3e6c8c65da9"  # Your Client ID
+SPOTIFY_CLIENT_SECRET = "fe23d961597c44249dfd675046319f5e"  # Your Client Secret
 SPOTIFY_REDIRECT_URI = "http://127.0.0.1:5000/callback"
 SPOTIFY_SCOPE = "user-read-playback-state user-modify-playback-state"
 sp_oauth = SpotifyOAuth(
@@ -40,6 +54,52 @@ sp_oauth = SpotifyOAuth(
     scope=SPOTIFY_SCOPE,
     cache_path=".spotifycache"
 )
+# @app.route("/chat", methods=["POST"])
+# def handle_chat():
+#     try:
+#         data = request.get_json()
+#         message = data.get("message", "")
+        
+#         if not message:
+#             return jsonify({"status": "error", "message": "No message provided"}), 400
+            
+#         # Get device state to provide context
+#         context = f"Smart home current status: Lights {DEVICE_STATE['light']}, " \
+#                   f"Fan {DEVICE_STATE['fan']}, Music {DEVICE_STATE['music']}, " \
+#                   f"Front door {DEVICE_STATE['front_door']}, Temperature {DEVICE_STATE['ac_temp']}°C."
+                  
+#         try:
+#             response = model.generate_content([context, message])
+#             return jsonify({"status": "success", "message": response.text})
+#         except InvalidArgument as e:
+#             logger.error(f"Gemini API error: {str(e)}")
+#             return jsonify({"status": "error", "message": "Could not process your request"}), 500
+            
+#     except Exception as e:
+#         logger.error(f"Error in chat handler: {str(e)}")
+#         return jsonify({"status": "error", "message": f"Server error: {str(e)}"}), 500
+@app.route('/chat', methods=['POST'])
+def chat():
+    try:
+        data = request.get_json()
+        user_input = data.get('message', '')
+
+        prompt = f"""
+        You are a smart home assistant. The user will give you commands related to their smart home, and you must reply accordingly.
+        Current Device State:
+        {DEVICE_STATE}
+
+        User: {user_input}
+        """
+
+        response = model.generate_content(prompt)
+        reply = response.text.strip()
+
+        return jsonify({"status": "success", "message": reply})
+    
+    except Exception as e:
+        print("❌ Error in /chat route:", e)  # 👈 Add this line to see the real issue in terminal
+        return jsonify({"status": "error", "message": "Sorry, I couldn't process your request. Please try again."})
 
 # Load Spotify token or authenticate
 def get_spotify_client():
@@ -130,6 +190,64 @@ def update_device_state(command, params=None):
     elif command == "activate_away_mode":
         DEVICE_STATE.update({"light": "off", "fan": "off", "front_door": "locked", "music": "stopped"})
 
+# Extract temperature
+def extract_temperature(command):
+    match = re.search(r'(\d+)(?:\s*degrees|\s*celsius)?', command)
+    if match:
+        temp = int(match.group(1))
+        if 16 <= temp <= 30:
+            return temp
+    return None
+
+# Extract song name
+def extract_song_name(command):
+    match = re.search(r'play\s*(?:the\s*)?song\s+(.+)', command, re.IGNORECASE)
+    if match:
+        song_name = match.group(1).strip()
+        logger.info(f"Extracted song_name: {song_name}")
+        return song_name
+    logger.warning(f"No song name extracted from: {command}")
+    return None
+
+# Predict intent (temporary local implementation)
+def predict_intent(command):
+    # Simplified intent prediction (replace with actual model if needed)
+    intents = ["turn_on_light", "turn_off_light", "turn_on_fan", "turn_off_fan", "play_music", 
+               "stop_music", "lock_front_door", "unlock_front_door", "set_ac_temperature", 
+               "activate_movie_mode", "activate_night_mode", "activate_away_mode", "unknown"]
+    params = {}
+    if "turn on light" in command:
+        return "turn_on_light", params
+    elif "turn off light" in command:
+        return "turn_off_light", params
+    elif "turn on fan" in command:
+        return "turn_on_fan", params
+    elif "turn off fan" in command:
+        return "turn_off_fan", params
+    elif "play" in command:
+        song_name = extract_song_name(command)
+        if song_name:
+            params["song_name"] = song_name
+        return "play_music", params
+    elif "stop music" in command:
+        return "stop_music", params
+    elif "lock front door" in command:
+        return "lock_front_door", params
+    elif "unlock front door" in command:
+        return "unlock_front_door", params
+    elif "set ac temperature" in command:
+        temp = extract_temperature(command)
+        if temp:
+            params["temperature"] = temp
+        return "set_ac_temperature", params
+    elif "activate movie mode" in command:
+        return "activate_movie_mode", params
+    elif "activate night mode" in command:
+        return "activate_night_mode", params
+    elif "activate away mode" in command:
+        return "activate_away_mode", params
+    return "unknown", {}
+
 # Endpoint to control devices
 @app.route("/command", methods=["POST"])
 def handle_command():
@@ -145,13 +263,62 @@ def handle_command():
             return jsonify({"status": "error", "message": "No command received."}), 400
         
         # Handle Spotify for music commands
+        # if command == "play_music":
+        #     sp = get_spotify_client()
+        #     if sp:
+        #         try:
+        #             song_name = params.get("song_name")
+        #             logger.info(f"Received song_name: {song_name}")
+        #             if song_name:
+        #                 results = sp.search(q=song_name, type="track", limit=1)
+        #                 tracks = results["tracks"]["items"]
+        #                 if tracks:
+        #                     track_uri = tracks[0]["uri"]
+        #                     track_name = tracks[0]["name"]
+        #                     logger.info(f"Playing track: {track_name}, URI: {track_uri}")
+        #                     sp.start_playback(uris=[track_uri])
+        #                     update_device_state(command, params)
+        #                     response_text = get_dynamic_response(command, params)
+        #                 else:
+        #                     logger.warning(f"Song '{song_name}' not found")
+        #                     sp.start_playback(uris=["spotify:track:4cOdK2wGLETKBW3PvgPWqT"])  # Yesterday
+        #                     update_device_state(command, params)
+        #                     response_text = f"🎵 Song '{song_name}' not found, playing default track!"
+        #             else:
+        #                 logger.info("No song_name, playing default")
+        #                 sp.start_playback(uris=["spotify:track:4cOdK2wGLETKBW3PvgPWqT"])  # Yesterday
+        #                 update_device_state(command, params)
+        #                 response_text = get_dynamic_response(command, params)
+        #         except Exception as e:
+        #             logger.error(f"Spotify error: {str(e)}")
+        #             return jsonify({"status": "error", "message": f"Spotify error: {str(e)}"}), 500
+        #     else:
+        #         return jsonify({"status": "error", "message": "Spotify not authenticated. Check terminal."}), 401
+        # Handle Spotify for music commands
         if command == "play_music":
             sp = get_spotify_client()
             if sp:
                 try:
-                    sp.start_playback(uris=["spotify:track:4cOdK2wGLETKBW3PvgPWqT"])  # The Beatles - Yesterday
-                    update_device_state(command, params)
-                    response_text = get_dynamic_response(command)
+                    song_name = params.get("song_name")
+                    logger.info(f"Received song_name: {song_name}")
+                    if song_name:
+                        results = sp.search(q=song_name, type="track", limit=5)
+                        tracks = results["tracks"]["items"]
+                        if tracks:
+                            track_uri = tracks[0]["uri"]
+                            track_name = tracks[0]["name"]
+                            artist_name = tracks[0]["artists"][0]["name"]
+                            logger.info(f"Playing track: {track_name} by {artist_name}, URI: {track_uri}")
+                            sp.start_playback(uris=[track_uri])
+                            update_device_state(command, params)
+                            response_text = f"🎵 Playing '{track_name}' by {artist_name}!"
+                        else:
+                            logger.warning(f"Song '{song_name}' not found")
+                            response_text = f"🎵 Sorry, I couldn't find '{song_name}'. Please try another song."
+                    else:
+                        logger.info("No song_name, showing song selector")
+                        update_device_state(command, params)
+                        response_text = "🎵 Please select a song from the music player"
                 except Exception as e:
                     logger.error(f"Spotify error: {str(e)}")
                     return jsonify({"status": "error", "message": f"Spotify error: {str(e)}"}), 500
@@ -163,7 +330,7 @@ def handle_command():
                 try:
                     sp.pause_playback()
                     update_device_state(command, params)
-                    response_text = get_dynamic_response(command)
+                    response_text = get_dynamic_response(command, params)
                 except Exception as e:
                     logger.error(f"Spotify error: {str(e)}")
                     return jsonify({"status": "error", "message": f"Spotify error: {str(e)}"}), 500
@@ -172,10 +339,7 @@ def handle_command():
         else:
             # Update device state for non-Spotify commands
             update_device_state(command, params)
-            response_text = get_dynamic_response(command)
-            if command == "set_ac_temperature" and "temperature" in params:
-                temp = params["temperature"]
-                response_text = f"🌡️ Temperature set to {temp}°C. Adjusting climate control..."
+            response_text = get_dynamic_response(command, params)
 
         # Log the command with timestamp
         log_entry = {
@@ -202,6 +366,35 @@ def handle_command():
         logger.error(f"Error in command handler: {str(e)}")
         return jsonify({"status": "error", "message": f"Server error: {str(e)}"}), 500
 
+@app.route("/search_songs", methods=["POST"])
+def search_songs():
+    try:
+        data = request.get_json()
+        query = data.get("query")
+        if not query:
+            return jsonify({"status": "error", "message": "No search query provided"}), 400
+            
+        sp = get_spotify_client()
+        if not sp:
+            return jsonify({"status": "error", "message": "Spotify not authenticated"}), 401
+            
+        results = sp.search(q=query, type="track", limit=10)
+        tracks = results["tracks"]["items"]
+        
+        songs = []
+        for track in tracks:
+            songs.append({
+                "name": track["name"],
+                "artist": track["artists"][0]["name"],
+                "album": track["album"]["name"],
+                "uri": track["uri"],
+                "image": track["album"]["images"][1]["url"] if track["album"]["images"] else ""
+            })
+            
+        return jsonify({"status": "success", "songs": songs})
+    except Exception as e:
+        logger.error(f"Error searching songs: {str(e)}")
+        return jsonify({"status": "error", "message": f"Error: {str(e)}"}), 500
 # Health check endpoint with device states
 @app.route("/health", methods=["GET"])
 def health_check():
@@ -216,10 +409,6 @@ def handle_text_command():
     try:
         data = request.get_json()
         command = data.get("command", "").lower()
-        
-        # Import functionality from voice_assistant
-        from voice_assistant import predict_intent, extract_temperature
-        
         intent, params = predict_intent(command)
         
         if intent == "set_ac_temperature":
@@ -251,4 +440,4 @@ def callback():
         return f"Authentication failed: {str(e)}", 500
 
 if __name__ == "__main__":
-    app.run(debug=False, host='0.0.0.0', port=5000)  # Debug off to avoid multiple URL prints
+    app.run(debug=True, host='0.0.0.0', port=5000)
